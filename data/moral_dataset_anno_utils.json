@@ -1,0 +1,60 @@
+{
+  "legend": null,
+  "reverse_legend": null,
+  "entity_to_seg_marking": {
+    "Locus of Intervention": [
+      "influence agent",
+      "influence patient"
+    ],
+    "Personal Force": [
+      "personal",
+      "impersonal"
+    ],
+    "Counterfactual Evitability": [
+      "avoidable",
+      "inevitable"
+    ],
+    "Causal Role": [
+      "instrumental",
+      "accidental"
+    ],
+    "Beneficence": [
+      "self beneficial",
+      "other beneficial"
+    ]
+  },
+  "actual_hierarchy": {
+    "locus_of_intervention": [
+      "influence agent",
+      "influence patient"
+    ],
+    "personal_force": [
+      "personal",
+      "impersonal"
+    ],
+    "evitability": [
+      "avoidable",
+      "inevitable"
+    ],
+    "causal_role": [
+      "instrumental",
+      "accidental"
+    ],
+    "beneficiary": [
+      "self beneficial",
+      "other beneficial"
+    ]
+  },
+  "seg_marking_to_prompt_category": {
+    "influence agent": "locus_of_intervention",
+    "influence patient": "locus_of_intervention",
+    "personal": "personal_force",
+    "impersonal": "personal_force",
+    "avoidable": "evitability",
+    "inevitable": "evitability",
+    "instrumental": "causal_role",
+    "accidental": "causal_role",
+    "self beneficial": "beneficiary",
+    "other beneficial": "beneficiary"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "legend": {
+    "m_24": "Outcome_5_negative",
+    "e_3": "Event_Cause",
+    "m_17": "EC_4_Same_Time_Cause",
+    "m_7": "AK_2_Agent_Aware",
+    "m_13": "Norm_3_Statistics_Norm",
+    "e_2": "Agent_Knowledge",
+    "m_8": "AK_2_Agent_Unaware",
+    "e_18": "Norm",
+    "m_10": "EC_4_Omission",
+    "m_25": "Outcome_5_neutral",
+    "m_14": "Norm_3_Prescriptive_Norm",
+    "m_9": "EC_4_Action",
+    "m_5": "CS_1_Disjunctive",
+    "m_4": "CS_1_Conjunctive",
+    "e_19": "Outcome",
+    "m_11": "EC_4_Normal_Event",
+    "m_15": "EC_4_Late_Cause",
+    "m_22": "Norm_3_Moral_Norm",
+    "m_6": "CS_1_Other_Structure",
+    "m_23": "Outcome_5_positive",
+    "m_16": "EC_4_Early_Cause",
+    "e_1": "Causal_Struct",
+    "m_12": "EC_4_Abnormal_Event"
+  },
+  "reverse_legend": {
+    "Outcome_5_negative": "m_24",
+    "Event_Cause": "e_3",
+    "EC_4_Same_Time_Cause": "m_17",
+    "AK_2_Agent_Aware": "m_7",
+    "Norm_3_Statistics_Norm": "m_13",
+    "Agent_Knowledge": "e_2",
+    "AK_2_Agent_Unaware": "m_8",
+    "Norm": "e_18",
+    "EC_4_Omission": "m_10",
+    "Outcome_5_neutral": "m_25",
+    "Norm_3_Prescriptive_Norm": "m_14",
+    "EC_4_Action": "m_9",
+    "CS_1_Disjunctive": "m_5",
+    "CS_1_Conjunctive": "m_4",
+    "Outcome": "e_19",
+    "EC_4_Normal_Event": "m_11",
+    "EC_4_Late_Cause": "m_15",
+    "Norm_3_Moral_Norm": "m_22",
+    "CS_1_Other_Structure": "m_6",
+    "Outcome_5_positive": "m_23",
+    "EC_4_Early_Cause": "m_16",
+    "Causal_Struct": "e_1",
+    "EC_4_Abnormal_Event": "m_12"
+  },
+  "entity_to_seg_marking": {
+    "Event_Cause": [
+      "EC_4_Action",
+      "EC_4_Omission",
+      "EC_4_Normal_Event",
+      "EC_4_Abnormal_Event",
+      "EC_4_Early_Cause",
+      "EC_4_Same_Time_Cause",
+      "EC_4_Late_Cause"
+    ],
+    "Norm": [
+      "Norm_3_Prescriptive_Norm",
+      "Norm_3_Statistics_Norm"
+    ],
+    "Causal_Struct": [
+      "CS_1_Disjunctive",
+      "CS_1_Conjunctive"
+    ],
+    "Agent_Knowledge": [
+      "AK_2_Agent_Aware",
+      "AK_2_Agent_Unaware"
+    ],
+    "Outcome": [
+      "Outcome_5_negative",
+      "Outcome_5_positive"
+    ]
+  },
+  "actual_hierarchy": {
+    "action_omission": [
+      "EC_4_Action",
+      "EC_4_Omission"
+    ],
+    "event_normality": [
+      "EC_4_Normal_Event",
+      "EC_4_Abnormal_Event"
+    ],
+    "time": [
+      "EC_4_Early_Cause",
+      "EC_4_Same_Time_Cause",
+      "EC_4_Late_Cause"
+    ],
+    "norm_type": [
+      "Norm_3_Prescriptive_Norm",
+      "Norm_3_Statistics_Norm"
+    ],
+    "agent_awareness": [
+      "AK_2_Agent_Aware",
+      "AK_2_Agent_Unaware"
+    ],
+    "causal_structure": [
+      "CS_1_Conjunctive",
+      "CS_1_Disjunctive"
+    ],
+    "outcome": [
+      "Outcome_5_negative",
+      "Outcome_5_positive"
+    ]
+  },
+  "seg_marking_to_prompt_category": {
+    "EC_4_Action": "action_omission",
+    "EC_4_Omission": "action_omission",
+    "EC_4_Normal_Event": "event_normality",
+    "EC_4_Abnormal_Event": "event_normality",
+    "EC_4_Early_Cause": "time",
+    "EC_4_Same_Time_Cause": "time",
+    "EC_4_Late_Cause": "time",
+    "Norm_3_Prescriptive_Norm": "norm_type",
+    "Norm_3_Statistics_Norm": "norm_type",
+    "AK_2_Agent_Aware": "agent_awareness",
+    "AK_2_Agent_Unaware": "agent_awareness",
+    "CS_1_Conjunctive": "causal_structure",
+    "CS_1_Disjunctive": "causal_structure",
+    "Outcome_5_negative": "outcome",
+    "Outcome_5_positive": "outcome"
+  }
+}
