@@ -1,62 +1,36 @@
-# Project name
+# MoCa: Measuring Human-Language Model Alignment on Causal and Moral Judgment Tasks
 
-## General points
+We provide the dataset and code that can reproduce the table/experiment in the paper.
 
-- for folder and file names: 
-	+ don't use white space in either folder or filenames, use an underscore "_" instead
-	+ (almost always) use lower case only
-- always use relative paths in your code
-	+ for example, to save a figure from an R script inside the `code/R/` folder the path should be "../../figures/figure_name.pdf"
-- keep your folder structure organized
-	+ we recommend adhering to the folder structure in this repository 
-	+ more complex projects may have additional folders such as `videos/`, `papers/`, ...
-- note: some of the folders are empty except for a `.keep` file
-	+ the `.keep` file is just there to make sure that github includes the otherwise empty folder 
-	+ feel free to delete the `.keep` file once you've added another file to that folder
-- each code subfolder has a readme file that should be updated with information about the code scripts 
-- use github issues to keep track of any larger decisions that we make along the way 
-- make sure to create a slack channel for each project, link up the github repository with the slack channel, and add the people working on the project to the github repo and slack channel 
-- see our lab wiki for more help: https://github.com/cicl-stanford/wiki/wiki
+Please contact us if you have questions about usage or make a pull request! 
 
-## Repository structure 
+Important note: it only runs on Python 3.9+ (because we use extensive class annotations).
 
-```
-├── code
-│   ├── R
-│   ├── bash
-│   ├── experiments
-│   └── python
-├── data
-├── figures
-├── papers
-├── presentation
-└── writeup
+There are two intended usage of our codebase:
+- Dataset Loading for LLM Evaluations
+- Generate Average Marginal Causal Effect (AMCE) Analytics and Plotting
+
+For this goal, we provide data loading code and analytics code. We also provide a simple interface to produce 
+API calls to the LLMs. Please note that the LLM interface code will not be maintained (as we expect better tooling libraries
+will appear over time), but the data loader code and analytics code will be maintained.
+
+## Dataset Loading
+
+## Analytics 
+
+## Running LLMs
+
+We provide a simple interface to do LLM API calls. The script does cache saving to a local file, which can be disabled. 
+
+## LLM Credentials
+
+In order to run OpenAI models, you need to first provide your credential as `credential.txt`.
+We expect `credential.txt` to contain two lines:
+```text
+secrete key: xxxx
+organization key: xxxx
 ```
 
-### code 
+For Anthropic models, we expect a credential file `anthro_credential.txt` that is formatted the same as above.
 
-Put all your code here. Use a separate folder for scripts based on the programming language. 
-
-#### experiments 
-
-The experiments folder is for the online (or in lab) experiments. Each experiment should be in its own folder. When you run another experiment, make sure to create a new folder (so that we always know what an experiment looked like when it was run). In readme file for the experiments folder, provide a brief summary of each experiment. Also note down any additional information that may not be saved within each experiment (e.g. how much the payment was for MTurk participants).
-
-### data 
-
-Put your raw data files here. Any data wrangling to that file should happen in your code scripts. 
-
-### figures 
-
-Save all your figures here. You may want to include additional subfolder here such as `plots/`, `diagrams/` etc. 
-
-### papers 
-
-Put research papers here that are relevant for your project. 
-
-### presentation
-
-Put your project presentation here (e.g. your keynote, powerpoint, google slides, or pdf file).
-
-### writeup 
-
-Put all your writing here. This folder structure is likely to expand for more complex projects. For example, you could add a subfolders like folders `journal/cognition/submission/`, `proceedings/cogsci/resubmission/` etc. 
+Note: Due to changes in Anthropic Claude APIs, our code (which relies on access to `claude-v1`) is no longer runnable.
