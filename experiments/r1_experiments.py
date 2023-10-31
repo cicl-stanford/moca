@@ -6,10 +6,10 @@ from tqdm import tqdm
 
 from moca.adapter import GPT3Adapter, HuggingfaceAdapter, DelphiAdapter, ClaudeAdapter, TogetherChatAdapter, \
     TogetherCompletionAdapter
-from data import CausalDataset, MoralDataset, Example, AbstractDataset, JsonSerializable
+from moca.data import CausalDataset, MoralDataset, Example, AbstractDataset, JsonSerializable
 from moca.evaluator import AccuracyEvaluatorWithAmbiguity, CorrelationEvaluator, RMSEEvaluator, AuROCEvaluator, \
     MAEEvaluator, CEEvaluator
-from prompt import CausalJudgmentPrompt, MoralJudgmentPrompt, JudgmentPrompt
+from moca.prompt import CausalJudgmentPrompt, MoralJudgmentPrompt, JudgmentPrompt
 
 from typing import Union
 from pathlib import Path
@@ -120,16 +120,13 @@ def exp1_moral_huggingface(model_name: str = "bert-base-uncased", batch_size: in
     all_instances, all_choice_scores, all_label_indices = [], [], []
 
     instances, choice_scores, label_indices = run_template_for_huggingface(cd, adapter, MoralJudgmentPrompt(
-        "./prompts/exp1_moral_prompt.jinja"),
-                                                                           method='yesno', batch_size=batch_size)
+        "./prompts/exp1_moral_prompt.jinja"), method='yesno', batch_size=batch_size)
     all_choice_scores.extend(choice_scores)
     all_label_indices.extend(label_indices)
     all_instances.extend(instances)
 
     instances, choice_scores, label_indices = run_template_for_huggingface(cd, adapter, MoralJudgmentPrompt(
-        "./prompts/exp1_moral_prompt_2.jinja"),
-                                                                           method='multiple_choice',
-                                                                           batch_size=batch_size)
+        "./prompts/exp1_moral_prompt_2.jinja"), method='multiple_choice', batch_size=batch_size)
     all_choice_scores.extend(choice_scores)
     all_label_indices.extend(label_indices)
     all_instances.extend(instances)
@@ -266,7 +263,6 @@ def exp1_causal(engine: str = 'text-davinci-002', chat_mode=False, together=Fals
     print(f"Causal CE: {ce:.4f}")
 
     return ExperimentResult(acc, conf_interval, r, p, rmse, mae, auroc, ce)
-
 
 def exp1_moral(engine: str = 'text-davinci-002', chat_mode=False, together=False):
     md = MoralDataset()

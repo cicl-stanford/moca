@@ -24,7 +24,8 @@ setup(
         "stanza",
         "promptsource",
         "nltk",
-        "anthropic"
+        "anthropic",
+        "together"
     ],
     python_requires='>=3.9',
 )
