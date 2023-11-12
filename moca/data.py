@@ -95,7 +95,7 @@ class InterfaceFactory:
 
 class JudgmentDatasetSchema:
     answer_choices: List[str] = ['Yes', 'No']
-    answer_to_label: Dict[str, int] = {'No': 1, 'Yes': 0}
+    answer_to_label: Dict[str, int] = {'Yes': 0, 'No': 1}
 
 
 ######################## Tool Objects ########################

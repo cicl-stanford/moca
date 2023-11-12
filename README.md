@@ -95,7 +95,7 @@ We recommend reporting multiple metrics, as they can be quite different.
 
 We propose to use `AuROC` as the main metric, and `Accuracy` as a secondary metric to compare between models.
 
-## Analytics 
+## AMCE Analysis 
 
 (Coming soon)
 

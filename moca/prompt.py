@@ -10,6 +10,12 @@ from dataclasses import dataclass
 
 from moca.data import FactorUtils
 
+
+def redirect_to_base_dir(file_path):
+    # get the current file directory
+    # and then prepend it to the file path
+    return pjoin(os.path.dirname(__file__), file_path)
+
 def rephrase_victim(victim):
     if victim is None:
         return victim
@@ -81,19 +87,19 @@ class AbstractJudgmentPrompt(object):
                                answer=answer, answer_index=JudgmentDatasetSchema.answer_to_label[answer])
 
 class CausalJudgmentPrompt(JudgmentPrompt):
-    def __init__(self, exp1_prompt='./prompts/exp1_causal_prompt.jinja'):
+    def __init__(self, exp1_prompt=redirect_to_base_dir('./prompts/exp1_causal_prompt.jinja')):
         super().__init__(exp1_prompt)
 
 class MoralJudgmentPrompt(JudgmentPrompt):
-    def __init__(self, exp1_prompt='./prompts/exp1_moral_prompt.jinja'):
+    def __init__(self, exp1_prompt=redirect_to_base_dir('./prompts/exp1_moral_prompt.jinja')):
         super().__init__(exp1_prompt)
 
 class CausalAbstractJudgmentPrompt(AbstractJudgmentPrompt):
-    def __init__(self, exp1_prompt='./prompts/exp1_causal_prompt.jinja'):
+    def __init__(self, exp1_prompt=redirect_to_base_dir('./prompts/exp1_causal_prompt.jinja')):
         super().__init__(exp1_prompt)
 
 class MoralAbstractJudgmentPrompt(AbstractJudgmentPrompt):
-    def __init__(self, exp1_prompt='./prompts/exp1_moral_prompt.jinja'):
+    def __init__(self, exp1_prompt=redirect_to_base_dir('./prompts/exp1_moral_prompt.jinja')):
         super().__init__(exp1_prompt)
 
 def factor_to_promptsource_dict(sent: Sentence, label: int, norm: str="") -> Dict:
@@ -133,7 +139,7 @@ class FactorPromptLoader(object):
         return prompts
 
 class CausalFactorPrompt(FactorPromptLoader):
-    def __init__(self, prompt_folder: str="./prompts/exp3_prompts/causal/",
+    def __init__(self, prompt_folder: str=redirect_to_base_dir("./prompts/exp3_prompts/causal/"),
                  anno_utils: Optional[AnnotationUtil]=None):
         self.factors = ['causal_structure', 'agent_awareness', 'event_normality', 'action_omission',
                         'time', 'norm_type']
@@ -169,7 +175,7 @@ class CausalFactorPrompt(FactorPromptLoader):
         return factor_categories, sent_prompts
 
 class MoralFactorPrompt(FactorPromptLoader):
-    def __init__(self, prompt_folder: str="./prompts/exp3_prompts/moral/",
+    def __init__(self, prompt_folder: str=redirect_to_base_dir("./prompts/exp3_prompts/moral/"),
                  anno_utils: Optional[AnnotationUtil]=None):
         self.factors = ['personal_force', 'causal_role', 'evitability', 'beneficiary',
                         'locus_of_intervention']
