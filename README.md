@@ -97,7 +97,46 @@ We propose to use `AuROC` as the main metric, and `Accuracy` as a secondary metr
 
 ## AMCE Analysis 
 
-(Coming soon)
+### Bar Plot
+
+<img height="828" src="https://github.com/cicl-stanford/moca/blob/main/experiments/acme_moral_fig.png?raw=true" width="1000"/>
+
+To generate a figure like this, run the following:
+
+**Step 1**: We first calculate the actual statistics from the experiment.
+
+Assume we ran the experiment in `experiments/r1_experiments.py`, note that in order to run AMCE, we need to access
+low level information saved in `.pkl` files.
+
+If `r1_experiments.py` was run as is, then pickle files of each model is saved under:
+`results/preds/exp1_{model}_causal_preds.pkl`.
+
+Run `causal_effect_analysis.py` file to generate the AMCE statistics, including computing 95% CI
+using Bootstrap.
+Note that in the end function, the pickle files are provided as:
+```python
+category_to_pickle_map = {
+        'single shot': "results/preds/exp1_text-davinci-002_moral_preds.pkl",
+        'persona - average': "results/preds/exp5_persona_text-davinci-002_moral_preds.pkl",
+        'persona - best': "results/preds/exp5_persona_text-davinci-002_moral_preds.pkl",
+        "ape": "results/preds/exp6_ape_text-davinci-002_moral_preds.pkl"
+    }
+```
+You can modify this to add your own models.
+
+After running this, a result file that contains high-level statistics will be saved under a file like
+`results/acme_causal_result.json`.
+
+**Step 2**: We then generate the plot using the result file.
+
+Run `experiments/amce_plot.py` file to generate the plot.
+
+This file runs the following method:
+```python
+visualize_causal_acme('results/methods_acme_causal_result.json', name_mapping=method_name_mapping,
+                          save_fig_name="acme_causal_methods.png")
+```
+
 
 ## LLM Credentials
 
