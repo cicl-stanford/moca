@@ -99,7 +99,7 @@ We propose to use `AuROC` as the main metric, and `Accuracy` as a secondary metr
 
 ### Bar Plot
 
-<img height="828" src="https://github.com/cicl-stanford/moca/blob/main/experiments/acme_moral_fig.png?raw=true" width="1000"/>
+<img height="570" width="690" src="https://github.com/cicl-stanford/moca/blob/main/experiments/acme_moral_fig.png?raw=true"/>
 
 To generate a figure like this, run the following:
 
@@ -137,6 +137,7 @@ visualize_causal_acme('results/methods_acme_causal_result.json', name_mapping=me
                           save_fig_name="acme_causal_methods.png")
 ```
 
+### Radar Plot
 
 ## LLM Credentials
 
@@ -150,6 +151,14 @@ organization key: xxxx
 For Anthropic models, we expect a credential file `anthro_credential.txt` that is formatted the same as above.
 
 Note: Due to changes in Anthropic Claude APIs, our code (which relies on access to `claude-v1`) is no longer runnable.
+
+## Note on Cost
+
+Running through the entire pipeline (without Social Simulacra) would cost roughly $1000 as of 2023-10-01.
+This is because the stories are relatively long, and we average performance over 2 prompt templates.
+
+Running Social Simulacra would significantly increase the cost, since we use 25 personas on 2 models, with 2 prompt templates,
+which would be 100 runs of the entire dataset.
 
 ## Bugs
 
