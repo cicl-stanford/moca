@@ -1,0 +1,68 @@
+Suzy and Billy are working on a project that is very important for our nation's
+security. The boss tells Suzy: "Be sure that you are here at exactly 9 am. It
+is absolutely essential that you arrive at that time. " Then he tells Billy:
+"Be sure that you do not come in at all tomorrow morning. It is absolutely
+essential that you not appear at that time." Both Billy and Suzy arrive at 9
+am. The motion detector was set up to be triggered if at least one person
+appeared in the room at the same time. So the motion detector went off.
+
+Quedstion: Did Billy cause the motion detector to go off?
+
+Answer: Yes
+
+P(Yes), P(No): [0.84, 0.16000000000000003]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "\"be sure that you do not come in at all tomorrow morning. it is absolutely essential that you not appear at that time.\"",
+        "victim": null,
+        "annotation": [
+            "norm_type",
+            "Norm_3_Prescriptive_Norm"
+        ]
+    },
+    {
+        "text": "Both billy and suzy arrive at 9 am.",
+        "victim": null,
+        "annotation": [
+            "event_normality",
+            "EC_4_Abnormal_Event"
+        ]
+    },
+    {
+        "text": "Both billy and suzy arrive at 9 am.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Action"
+        ]
+    },
+    {
+        "text": "Both billy and suzy arrive at 9 am.",
+        "victim": null,
+        "annotation": [
+            "time",
+            "EC_4_Same_Time_Cause"
+        ]
+    },
+    {
+        "text": "He tells billy.",
+        "victim": null,
+        "annotation": [
+            "agent_awareness",
+            "AK_2_Agent_Aware"
+        ]
+    },
+    {
+        "text": "The motion detector was set up to be triggered if at least one person appeared in the room at the same time.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Disjunctive"
+        ]
+    }
+]
+
+[true, true, true, true, true, true, false, false, true, true, true, false, true, true, false, true, true, true, true, true, true, true, true, true, true]

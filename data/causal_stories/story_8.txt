@@ -1,0 +1,52 @@
+A machine is set up in such a way that it will short circuit if both the black
+wire and the red wire touch the battery at the same time. The machine will not
+short circuit if just one of these wires touches the battery. The black wire is
+designated as the one that is supposed to touch the battery, while the red wire
+is supposed to remain in some other part of the machine. One day, the black
+wire and the red wire both end up touching the battery at the same time. There
+is a short circuit.
+
+Quedstion: Did the fact that the red wire touched the battery cause the machine to short circuit?
+
+Answer: Yes
+
+P(Yes), P(No): [0.72, 0.28]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "One day, the black wire and the red wire both end up touching the battery at the same time.",
+        "victim": null,
+        "annotation": [
+            "time",
+            "EC_4_Same_Time_Cause"
+        ]
+    },
+    {
+        "text": "A machine is set up in such a way that it will short circuit if both the black wire and the red wire touch the battery at the same time.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Conjunctive"
+        ]
+    },
+    {
+        "text": "One day, the black wire and the red wire both end up touching the battery at the same time.",
+        "victim": null,
+        "annotation": [
+            "event_normality",
+            "EC_4_Abnormal_Event"
+        ]
+    },
+    {
+        "text": "The red wire is supposed to remain in some other part of the machine.",
+        "victim": null,
+        "annotation": [
+            "norm_type",
+            "Norm_3_Prescriptive_Norm"
+        ]
+    }
+]
+
+[true, true, true, true, true, true, true, true, true, false, true, false, true, true, true, true, true, true, true, false, false, false, true, false, false]

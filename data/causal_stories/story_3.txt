@@ -1,0 +1,46 @@
+The receptionist in the philosophy department keeps her desk stocked with pens.
+The administrative assistants are allowed to take the pens, but faculty members
+are supposed to buy their own. The administrative assistants typically do take
+the pens. Unfortunately, so do the faculty members. The receptionist has
+repeatedly emailed them reminders that only administrative assistants are
+allowed to take the pens. On Monday morning, one of the administrative
+assistants encounters Professor Smith walking past the receptionist's desk.
+Both take pens. Later that day, the receptionist needs to take an important
+message... but she has a problem. There are no pens left on her desk.
+
+Quedstion: Did the administrative assistant cause the problem?
+
+Answer: No
+
+P(Yes), P(No): [0.32, 0.6799999999999999]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "The administrative assistants are allowed to take the pens.",
+        "victim": null,
+        "annotation": [
+            "norm_type",
+            "Norm_3_Prescriptive_Norm"
+        ]
+    },
+    {
+        "text": "On monday morning, one of the administrative assistants encounters professor smith walking past the receptionist's desk. both take pens.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Action"
+        ]
+    },
+    {
+        "text": "On monday morning, one of the administrative assistants encounters professor smith walking past the receptionist's desk. both take pens.",
+        "victim": null,
+        "annotation": [
+            "event_normality",
+            "EC_4_Normal_Event"
+        ]
+    }
+]
+
+[false, false, false, false, false, false, true, false, false, true, false, true, true, false, false, false, true, true, false, false, false, true, true, false, false]

@@ -1,0 +1,53 @@
+You are a Peace Corps health-worker who is volunteering in a rural African
+village. A man from a nearby village has been infected with the Ebola virus
+that is extremely contagious, incurable, and almost always deadly.
+Unexpectedly, this man is still alive which means he must be immune to the
+virus' deadly consequences. However, he wrongly believes that your health
+center can cure his disease completely. You see him approaching and you know
+that if he enters the village he will pass the virus to 119 innocent people
+who, unlike him, will die.
+
+Quedstion: Do you prevent the man from entering the village by shooting him, so he won't spread the virus to you and the 119 people of the village?
+
+Answer: Yes
+
+P(Yes), P(No): [0.68, 0.31999999999999995]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "Unexpectedly, this man is still alive which means he must be immune to the virus' deadly consequences.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "avoidable"
+        ]
+    },
+    {
+        "text": "You are a Peace Corps health-worker who is volunteering in a rural African village. A man from a nearby village has been infected with the Ebola virus that is extremely contagious, incurable, and almost always deadly. Unexpectedly, this man is still alive which means he must be immune to the virus' deadly consequences. However, he wrongly believes that your health center can cure his disease completely. You see him approaching and you know that if he enters the village he will pass the virus to 119 innocent people who, unlike him, will die. You prevent the man from entering the village by shooting him, so he won't spread the virus to you and the 119 people of the village.",
+        "victim": "the man",
+        "annotation": [
+            "causal_role",
+            "instrumental"
+        ]
+    },
+    {
+        "text": "You prevent the man from entering the village by shooting him",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "personal"
+        ]
+    },
+    {
+        "text": "so he won't spread the virus to you and the 119 people of the village.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "self beneficial"
+        ]
+    }
+]
+
+[true, true, false, true, true, true, false, true, true, true, false, true, true, false, false, false, true, true, true, false, true, true, true, true, false]

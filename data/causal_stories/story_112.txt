@@ -1,0 +1,62 @@
+Jim, Carol, Bob, and Nancy are researchers in a remote area, and they have a
+limited supply of electricity. Because of their limited supply, the electricity
+only comes on in the evenings from 8-9 PM, and they have to restrict who can
+use power on certain days. If two people turn on their lamps at the same time,
+the breaker will fail. The breaker will not fail if fewer people turn on their
+lamps at the same time. Jim, Carol, Bob, and Nancy are all allowed to use their
+lamps on Thursdays. This Thursday Jim turns on his lamp at 8 PM. Just then,
+Carol also turns on her lamp. Since two people turned on their lamps at the
+same time, the circuit breaker failed.
+
+Quedstion: Did Jim turning on his lamp at 8 PM cause the circuit breaker to fail?
+
+Answer: No
+
+P(Yes), P(No): [0.08, 0.92]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "If two people turn on their lamps at the same time, the breaker will fail.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Conjunctive"
+        ]
+    },
+    {
+        "text": "This thursday jim turns on his lamp at 8 pm. just then, carol also turns on her lamp.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Action"
+        ]
+    },
+    {
+        "text": "This thursday jim turns on his lamp at 8 pm. just then, carol also turns on her lamp.",
+        "victim": null,
+        "annotation": [
+            "time",
+            "EC_4_Same_Time_Cause"
+        ]
+    },
+    {
+        "text": "This thursday jim turns on his lamp at 8 pm. just then, carol also turns on her lamp.",
+        "victim": null,
+        "annotation": [
+            "event_normality",
+            "EC_4_Normal_Event"
+        ]
+    },
+    {
+        "text": "Jim, carol, bob, and nancy are all allowed to use their lamps on thursdays.",
+        "victim": null,
+        "annotation": [
+            "norm_type",
+            "Norm_3_Prescriptive_Norm"
+        ]
+    }
+]
+
+[false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false]

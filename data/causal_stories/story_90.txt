@@ -1,0 +1,18 @@
+Joe was about to go pick up his child from a school in the suburbs. In the
+parking lot, he stopped to help a person who was injured while exercising.
+Because of this delay in picking up his son, Joe's neighbor, who waited 15 min
+for Joe to show up, took the child home in his car. On the way home, the
+neighbor's car was struck by a drunk driver. Joe's son, the only seriously hurt
+victim, received severe leg injuries.
+
+Quedstion: Did Joe cause his son's injury?
+
+Answer: Yes
+
+P(Yes), P(No): [0.52, 0.48]
+Is Ambiguous: True
+
+Annotated sentences:
+[]
+
+[false, false, false, false, false, false, false, true, true, false, true, true, true, true, true, true, false, true, false, false, true, true, true, true, false]

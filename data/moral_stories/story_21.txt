@@ -1,0 +1,51 @@
+You are a crewmember on a submarine traveling under a large iceberg. An
+explosion has damaged the ship, injured several crewmembers and collapsed the
+only access between the upper and lower parts of the ship. You and ten
+survivors are in the upper section, which does not have enough oxygen for all
+of you to survive until you reach the surface. One single crewmember is lying
+unconscious in the lower section, where there is enough oxygen.
+
+Quedstion: Do you push the button, which will make the hatch fall down on the crewmember, so that you and the ten survivors get enough oxygen?
+
+Answer: Yes
+
+P(Yes), P(No): [0.8, 0.19999999999999996]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "So that you and the ten survivors get enough oxygen.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "self beneficial"
+        ]
+    },
+    {
+        "text": "You push the button, which will make the hatch fall down on the crewmember",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "impersonal"
+        ]
+    },
+    {
+        "text": "You are a crewmember on a submarine traveling under a large iceberg. An explosion has damaged the ship, injured several crewmembers and collapsed the only access between the upper and lower parts of the ship. You and ten survivors are in the upper section, which does not have enough oxygen for all of you to survive until you reach the surface. One single crewmember is lying unconscious in the lower section, where there is enough oxygen. You push the button, which will make the hatch fall down on the crewmember, so that you and the ten survivors get enough oxygen.",
+        "victim": "the one crewmember",
+        "annotation": [
+            "causal_role",
+            "accidental"
+        ]
+    },
+    {
+        "text": "One single crewmember is lying unconscious in the lower section, where there is enough oxygen.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "avoidable"
+        ]
+    }
+]
+
+[true, true, true, false, true, true, false, false, true, true, true, true, true, false, true, true, true, true, true, true, true, true, false, true, true]

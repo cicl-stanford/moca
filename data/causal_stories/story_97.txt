@@ -1,0 +1,26 @@
+Karen was an assistant editor for a small publishing firm. She had a rare
+hereditary disease called Karpinson's hemotrysoma, characterized by the lack of
+an enzyme that normally breaks down certain proteins in the digestive system.
+Because of this, fermented drinks such as wine and liqueurs can cause a severe
+allergic reaction in someone with the disease. Karen had just received a
+promotion so her boss, Mr. Carlson, took her to an expensive French restaurant
+to celebrate. Mr. Carlson had been to this restaurant several times, so he
+ordered for both of them. As he looked over the menu, Mr. Carlson considered
+what to order for Karen. He first thought about ordering the Coquilles
+Saint-Jacques, but at the last moment decided on the Moules Mariniere instead.
+Although Mr. Carlson did not know this, both of these dishes were made with a
+wine sauce. Karen enjoyed her meal greatly, but began to feel ill shortly after
+finishing. Within minutes, she went into convulsions and was rushed away in an
+ambulance. She died on the way to the hospital.
+
+Quedstion: Did Mr. Carlson's choice of dish cause Karen's death?
+
+Answer: No
+
+P(Yes), P(No): [0.48, 0.52]
+Is Ambiguous: True
+
+Annotated sentences:
+[]
+
+[true, true, false, true, false, true, false, true, false, false, true, false, true, false, false, true, false, false, true, false, true, true, false, true, false]

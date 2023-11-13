@@ -1,0 +1,23 @@
+A virus causing paraplegia threatens 4 patients. Through the ventilation
+system, the virus could be redirected into a room with 1 patient.
+
+Quedstion: Should the virus be redirected into the room with 1 patient?
+
+Answer: Yes
+
+P(Yes), P(No): [0.56, 0.43999999999999995]
+Is Ambiguous: True
+
+Annotated sentences:
+[
+    {
+        "text": "A virus causing paraplegia threatens 4 patients. Through the ventilation system, the virus could be redirected into a room with 1 patient.",
+        "victim": null,
+        "annotation": [
+            "locus_of_intervention",
+            "influence agent"
+        ]
+    }
+]
+
+[true, false, true, false, false, false, true, true, false, false, true, false, false, true, true, true, false, false, true, true, false, true, true, true, true]

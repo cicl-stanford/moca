@@ -1,0 +1,50 @@
+You are on the night watch in a hospital. A chemical product has been spilled
+in a room with six patients. This chemical is highly toxic because once exposed
+to oxygen it evaporates and transforms into a poisonous gas which will kill all
+the patients in the room. You cannot wipe it away with conventional towels or
+wiping clothes. However, human skin absorbs it swiftly.
+
+Quedstion: Do you prevent the toxic evaporation placing one of the patients on the chemical, so the other five patients won't be poisoned?
+
+Answer: No
+
+P(Yes), P(No): [0.16, 0.84]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "You prevent the toxic evaporation placing one of the patients on the chemical",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "personal"
+        ]
+    },
+    {
+        "text": "You are on the night watch in a hospital. A chemical product has been spilled in a room with six patients. This chemical is highly toxic because once exposed to oxygen it evaporates and transforms into a poisonous gas which will kill all the patients in the room. You cannot wipe it away with conventional towels or wiping clothes. However, human skin absorbs it swiftly. You prevent the toxic evaporation placing one of the patients on the chemical, so the other five patients won't be poisoned.",
+        "victim": "the one patient",
+        "annotation": [
+            "causal_role",
+            "instrumental"
+        ]
+    },
+    {
+        "text": "This chemical is highly toxic because once exposed to oxygen it evaporates and transforms into a poisonous gas which will kill all the patients in the room.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "inevitable"
+        ]
+    },
+    {
+        "text": "so the other five patients won't be poisoned.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "other beneficial"
+        ]
+    }
+]
+
+[false, false, false, true, false, false, false, false, true, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false]

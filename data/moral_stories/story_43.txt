@@ -1,0 +1,49 @@
+A viral epidemic has spread across the globe killing thousands of people. You
+are a medical researcher and have developed two substances in your laboratory.
+Due to a mistake both are labeled as vaccine. One of them is indeed the
+vaccine, which could save thousands of lives. The other one is lethal.
+
+Quedstion: Do you identify the vaccine allowing the nurse to inject the two substances to two patients which will poison one of them, so thousands of people can be vaccinated?
+
+Answer: Yes
+
+P(Yes), P(No): [0.8, 0.19999999999999996]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "You identify the vaccine allowing the nurse to inject the two substances to two patients which will poison one of them",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "avoidable"
+        ]
+    },
+    {
+        "text": "A viral epidemic has spread across the globe killing thousands of people. You are a medical researcher and have developed two substances in your laboratory. Due to a mistake both are labeled as vaccine. One of them is indeed the vaccine, which could save thousands of lives. The other one is lethal. You identify the vaccine allowing the nurse to inject the two substances to two patients which will poison one of them, so thousands of people can be vaccinated.",
+        "victim": "a patient",
+        "annotation": [
+            "causal_role",
+            "accidental"
+        ]
+    },
+    {
+        "text": "so thousands of people can be vaccinated.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "other beneficial"
+        ]
+    },
+    {
+        "text": "You identify the vaccine allowing the nurse to inject the two substances to two patients which will poison one of them",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "impersonal"
+        ]
+    }
+]
+
+[true, true, true, true, true, true, true, false, false, true, true, true, false, true, true, true, true, true, true, false, true, false, true, true, true]

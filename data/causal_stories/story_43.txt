@@ -1,0 +1,63 @@
+Billy and Suzy work for a company that has a central computer. If two people
+log in to the central computer at exactly 9:27 am, some work emails will be
+immediately deleted. In order to make sure that one person is always available
+to answer incoming phone calls, the company issued the following official
+policy: Billy is the only one permitted to log in to the central computer in
+the afternoons, whereas Suzy is the only one permitted to log in to the central
+computer in the mornings. Billy is never permitted to log into the central
+computer in the morning. This morning at exactly 9:27 am, Billy and Suzy both
+log into the central computer at the same time. Immediately, some work emails
+are deleted.
+
+Quedstion: Did Billy cause the emails to be deleted?
+
+Answer: Yes
+
+P(Yes), P(No): [0.56, 0.43999999999999995]
+Is Ambiguous: True
+
+Annotated sentences:
+[
+    {
+        "text": "This morning at exactly 9:27 am, billy and suzy both log into the central computer at the same time.",
+        "victim": null,
+        "annotation": [
+            "time",
+            "EC_4_Same_Time_Cause"
+        ]
+    },
+    {
+        "text": "This morning at exactly 9:27 am, billy and suzy both log into the central computer at the same time.",
+        "victim": null,
+        "annotation": [
+            "event_normality",
+            "EC_4_Abnormal_Event"
+        ]
+    },
+    {
+        "text": "If two people log in to the central computer at exactly 9:27 am, some work emails will be immediately deleted.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Conjunctive"
+        ]
+    },
+    {
+        "text": "Billy is the only one permitted to log in to the central computer in the afternoons. Billy is never permitted to log into the central computer in the morning.",
+        "victim": null,
+        "annotation": [
+            "norm_type",
+            "Norm_3_Prescriptive_Norm"
+        ]
+    },
+    {
+        "text": "This morning at exactly 9:27 am, billy and suzy both log into the central computer at the same time.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Action"
+        ]
+    }
+]
+
+[true, true, true, true, false, true, true, true, true, true, false, false, false, false, true, true, true, false, false, false, true, false, false, false, true]

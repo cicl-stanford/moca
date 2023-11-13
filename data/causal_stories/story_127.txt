@@ -1,0 +1,48 @@
+Louie is playing a game of basketball, and he made a bet with his friends who
+are watching on the sidelines. If Louie either makes a layup or makes a 3-point
+shot during the game, then he'll win $100. Just when the game started, Louie
+immediately got the ball at the 3-point line. He looked to the basket, focused
+his shot, and made a 3-point shot right at the beginning of the game. Louie and
+his friends continued playing, but as hard as he tried, Louie couldn't make
+another shot. And then right at the end of the game as the clock was winding
+down, Louie got the ball at the 3-point line. He looked to the basket, dribbled
+in, and then made a layup right at the buzzer. Then the game ended. Because
+Louie would win $100 if he either made a layup or a 3-point shot, Louie won
+$100.
+
+Quedstion: Did Louie win the $100 bet because he made the layup?
+
+Answer: No
+
+P(Yes), P(No): [0.32, 0.6799999999999999]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "And then right at the end of the game as the clock was winding down, louie got the ball at the 3-point line. he looked to the basket, dribbled in, and then made a layup right at the buzzer.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Action"
+        ]
+    },
+    {
+        "text": "And then right at the end of the game as the clock was winding down, louie got the ball at the 3-point line. he looked to the basket, dribbled in, and then made a layup right at the buzzer.",
+        "victim": null,
+        "annotation": [
+            "time",
+            "EC_4_Late_Cause"
+        ]
+    },
+    {
+        "text": "If louie either makes a layup or makes a 3-point shot during the game, then he'll win $100.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Disjunctive"
+        ]
+    }
+]
+
+[false, false, true, true, false, true, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, true, true, false, true]

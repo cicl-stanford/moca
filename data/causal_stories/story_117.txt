@@ -1,0 +1,63 @@
+Jim, Carol, Bob, and Nancy are researchers in a remote area, and they have a
+limited supply of electricity. Because of their limited supply, the electricity
+only comes on in the evenings from 8-9 PM, and they have to restrict who can
+use power on certain days. If four people turn on their lamps at the same time,
+the breaker will fail. The breaker will not fail if fewer people turn on their
+lamps at the same time. Jim is not supposed to use his lamp on Thursdays.
+Carol, Bob, and Nancy may all use their lamps on Thursdays. This Thursday Jim
+turns on his lamp at 8 PM. Just then Carol turns on her lamp, Bob also turns on
+his lamp, and Nancy turns on her lamp. Since four people turned on their lamps
+at the same time, the circuit breaker failed.
+
+Quedstion: Did Jim turning on his lamp at 8 PM cause the circuit breaker to fail?
+
+Answer: Yes
+
+P(Yes), P(No): [0.64, 0.36]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "Jim is not supposed to use his lamp on thursdays.",
+        "victim": null,
+        "annotation": [
+            "norm_type",
+            "Norm_3_Prescriptive_Norm"
+        ]
+    },
+    {
+        "text": "This thursday jim turns on his lamp at 8 pm. just then carol turns on her lamp, bob also turns on his lamp, and nancy turns on her lamp.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Action"
+        ]
+    },
+    {
+        "text": "This thursday jim turns on his lamp at 8 pm. just then carol turns on her lamp, bob also turns on his lamp, and nancy turns on her lamp.",
+        "victim": null,
+        "annotation": [
+            "event_normality",
+            "EC_4_Abnormal_Event"
+        ]
+    },
+    {
+        "text": "If four people turn on their lamps at the same time, the breaker will fail.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Conjunctive"
+        ]
+    },
+    {
+        "text": "This thursday jim turns on his lamp at 8 pm. just then carol turns on her lamp, bob also turns on his lamp, and nancy turns on her lamp.",
+        "victim": null,
+        "annotation": [
+            "time",
+            "EC_4_Same_Time_Cause"
+        ]
+    }
+]
+
+[true, false, true, true, false, true, true, true, true, true, false, true, true, true, true, false, false, true, false, true, false, true, true, false, false]

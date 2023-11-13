@@ -1,0 +1,50 @@
+You are on the night watch in a hospital. A chemical product has been spilled
+in a room with five patients. This chemical is highly toxic because once
+exposed to oxygen it evaporates and transforms into a poisonous gas which will
+kill all the patients in the room. You cannot wipe it away with conventional
+towels or wiping clothes.
+
+Quedstion: Do you divert the gas out of the room by activating the ventilation system, causing it to be transferred to the room with one patient, so the other five patients won't be poisoned?
+
+Answer: Yes
+
+P(Yes), P(No): [0.6, 0.4]
+Is Ambiguous: True
+
+Annotated sentences:
+[
+    {
+        "text": "This chemical is highly toxic because once exposed to oxygen it evaporates and transforms into a poisonous gas which will kill all the patients in the room.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "inevitable"
+        ]
+    },
+    {
+        "text": "You divert the gas out of the room by activating the ventilation system",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "impersonal"
+        ]
+    },
+    {
+        "text": "You are on the night watch in a hospital. A chemical product has been spilled in a room with five patients. This chemical is highly toxic because once exposed to oxygen it evaporates and transforms into a poisonous gas which will kill all the patients in the room. You cannot wipe it away with conventional towels or wiping clothes. You divert the gas out of the room by activating the ventilation system, causing it to be transferred to the room with one patient, so the other five patients won't be poisoned.",
+        "victim": "the one patient",
+        "annotation": [
+            "causal_role",
+            "accidental"
+        ]
+    },
+    {
+        "text": "so the other five patients won't be poisoned.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "other beneficial"
+        ]
+    }
+]
+
+[false, false, true, false, false, false, true, false, false, true, true, false, true, true, true, true, true, false, true, true, true, true, false, true, true]

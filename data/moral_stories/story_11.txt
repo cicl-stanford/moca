@@ -1,0 +1,57 @@
+On the test ground of a modern railroad property an unmanned speed-train that
+normally can be remote-controlled got out of control due to a technical defect.
+This speed-train is heading towards three railroad workers that are maintaining
+the tracks. Since these workers are wearing a novel hearing protection, they
+would not notice the speed-train on time and hence would be run over by it.
+Karl, an employee of the rail track control center, recognizes the upcoming
+accident. However, it is not possible to stop the train on time anymore. There
+is only one possibility to avoid the death of the three workers: Karl could
+push a button that would open a trap door and thereby causing a heavy worker on
+top of the bridge to fall on the tracks. The speed-train would collide with the
+heavy worker and be stopped before it reaches the three workers. The heavy
+worker would lose his life due to the collision.
+
+Quedstion: Should Karl perform the proposed action?
+
+Answer: No
+
+P(Yes), P(No): [0.2, 0.8]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "On the test ground of a modern railroad property an unmanned speed-train that normally can be remote-controlled got out of control due to a technical defect. This speed-train is heading towards three railroad workers that are maintaining the tracks. Since these workers are wearing a novel hearing protection, they would not notice the speed-train on time and hence would be run over by it. Karl, an employee of the rail track control center, recognizes the upcoming accident. However, it is not possible to stop the train on time anymore. There is only one possibility to avoid the death of the three workers: Karl could push a button that would open a trap door and thereby causing a heavy worker on top of the bridge to fall on the tracks. The speed-train would collide with the heavy worker and be stopped before it reaches the three workers. The heavy worker would lose his life due to the collision. Karl should perform the proposed action.",
+        "victim": "the heavy worker",
+        "annotation": [
+            "causal_role",
+            "instrumental"
+        ]
+    },
+    {
+        "text": "This speed-train is heading towards three railroad workers that are maintaining the tracks.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "other beneficial"
+        ]
+    },
+    {
+        "text": "Karl could run to a nearby bridge on which a heavy worker is standing and push this worker from the bridge. Thereby this worker would fall on the tracks and collide with the speed-train. The heavy worker would lose his life due to the collision.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "avoidable"
+        ]
+    },
+    {
+        "text": "Karl could push a button that would open a trap door and thereby causing a heavy worker on top of the bridge to fall on the tracks.",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "impersonal"
+        ]
+    }
+]
+
+[true, false, false, false, false, false, false, false, false, false, false, true, false, true, false, true, false, false, false, false, false, false, false, false, true]

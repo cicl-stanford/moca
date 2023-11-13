@@ -1,0 +1,51 @@
+You are part of a shipyard dock team that attaches crane cables to containers
+to unload the cargo ships. You and the others have just attached cables to a
+container and are now climbing on top of it to make sure it is unloaded
+properly. Suddenly the red warning light flashes indicating that a cable is
+about to fail. If it fails over the deck the container will collapse onto five
+crewmembers.
+
+Quedstion: Do you drop the container pushing the emergency button, which will cause the container to fall back into the cargo bay on the crewmember, so the container won't collapse onto the five crewmembers on the deck?
+
+Answer: No
+
+P(Yes), P(No): [0.32, 0.6799999999999999]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "You drop the container pushing the emergency button, which will cause the container to fall back into the cargo bay on the crewmember",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "impersonal"
+        ]
+    },
+    {
+        "text": "You are part of a shipyard dock team that attaches crane cables to containers to unload the cargo ships. You and the others have just attached cables to a container and are now climbing on top of it to make sure it is unloaded properly. Suddenly the red warning light flashes indicating that a cable is about to fail. If it fails over the deck the container will collapse onto five crewmembers. You drop the container pushing the emergency button, which will cause the container to fall back into the cargo bay on the crewmember, so the container won't collapse onto the five crewmembers on the deck.",
+        "victim": "the crewmember",
+        "annotation": [
+            "causal_role",
+            "accidental"
+        ]
+    },
+    {
+        "text": "You and the others have just attached cables to a container and are now climbing on top of it to make sure it is unloaded properly.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "avoidable"
+        ]
+    },
+    {
+        "text": "so the container won't collapse onto the five crewmembers on the deck.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "other beneficial"
+        ]
+    }
+]
+
+[true, true, false, true, true, true, true, false, true, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false]

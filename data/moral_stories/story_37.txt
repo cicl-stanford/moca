@@ -1,0 +1,50 @@
+You are the bus driver of a kindergarten trip to the zoo. On the way, faulty
+tires cause the bus to plunge off a bridge and into a roaring river. You and
+three of the children are still in the sinking bus. The rest has already been
+swept away by the river. You grab the two children next to you and begin to
+swim towards the exit, but bulky seats are blocking it.
+
+Quedstion: Do you free the exit putting the seats in the corridor, which will trap the third child, so you and the other two children can reach the surface?
+
+Answer: Yes
+
+P(Yes), P(No): [0.64, 0.36]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "You and three of the children are still in the sinking bus.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "inevitable"
+        ]
+    },
+    {
+        "text": "You are the bus driver of a kindergarten trip to the zoo. On the way, faulty tires cause the bus to plunge off a bridge and into a roaring river. You and three of the children are still in the sinking bus. The rest has already been swept away by the river. You grab the two children next to you and begin to swim towards the exit, but bulky seats are blocking it. You free the exit putting the seats in the corridor, which will trap the third child, so you and the other two children can reach the surface.",
+        "victim": "the third child",
+        "annotation": [
+            "causal_role",
+            "accidental"
+        ]
+    },
+    {
+        "text": "You free the exit putting the seats in the corridor, which will trap the third child",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "impersonal"
+        ]
+    },
+    {
+        "text": "so you and the other two children can reach the surface.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "self beneficial"
+        ]
+    }
+]
+
+[false, true, false, true, true, true, true, true, false, false, false, false, true, false, true, true, true, true, true, false, true, true, true, false, true]

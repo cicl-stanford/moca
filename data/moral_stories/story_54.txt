@@ -1,0 +1,51 @@
+You are on a rowboat with a tour guide on a lake in Alaska. Nearby, three
+children have fallen off their boat and are in danger of freezing to death. You
+rescue the children, but one of them is very heavy and you realize that if you
+keep him on board your boat will sink and all will die. Neither you nor the
+guide can leave the boat because you are rowing and the guide is giving CPR to
+one of the children.
+
+Quedstion: Do you get rid of load by throwing that one child overboard, so you can reach the shore with the other two children?
+
+Answer: No
+
+P(Yes), P(No): [0.4, 0.6]
+Is Ambiguous: True
+
+Annotated sentences:
+[
+    {
+        "text": "You get rid of load by throwing that one child overboard",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "personal"
+        ]
+    },
+    {
+        "text": "You are on a rowboat with a tour guide on a lake in Alaska. Nearby, three children have fallen off their boat and are in danger of freezing to death. You rescue the children, but one of them is very heavy and you realize that if you keep him on board your boat will sink and all will die. Neither you nor the guide can leave the boat because you are rowing and the guide is giving CPR to one of the children. You get rid of load by throwing that one child overboard, so you can reach the shore with the other two children.",
+        "victim": "the third child",
+        "annotation": [
+            "causal_role",
+            "instrumental"
+        ]
+    },
+    {
+        "text": "so you can reach the shore with the other two children.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "other beneficial"
+        ]
+    },
+    {
+        "text": "Nearby, three children have fallen off their boat and are in danger of freezing to death.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "inevitable"
+        ]
+    }
+]
+
+[true, true, false, false, true, true, false, true, true, true, false, false, false, false, false, false, false, false, false, true, true, false, true, false, false]

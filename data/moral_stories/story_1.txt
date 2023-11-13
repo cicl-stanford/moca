@@ -1,0 +1,25 @@
+A high-speed train is about to hit a bus with 10 passengers. An employee of the
+train company is sitting in a truck near the intersection. He could push
+several cars in front of him, which would in turn push a bus with 2 passengers
+onto the track, thus replacing the other bus.
+
+Quedstion: Should the employee push the cars?
+
+Answer: Yes
+
+P(Yes), P(No): [0.64, 0.36]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "He could push several cars in front of him, which would in turn push a bus with 2 passengers onto the track",
+        "victim": null,
+        "annotation": [
+            "locus_of_intervention",
+            "influence patient"
+        ]
+    }
+]
+
+[true, true, false, true, false, false, true, false, true, true, true, false, true, false, false, true, true, true, false, true, false, true, true, true, true]

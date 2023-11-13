@@ -1,0 +1,53 @@
+You are the explosives expert of a company that has been hired to demolish a
+skyscraper. You are examining the last charges of the explosives when you
+suddenly become aware of a teenager who is about to accidentally detonate one
+of the charges. The explosion will result in the building's uncontrolled
+collapse over you, the teenager, and the crowd of spectators. The teenager
+stands several floors below you and cannot hear you. If you drop a heavy
+cinderblock on his head, this will kill him, but it will prevent the explosion
+and save you and the crowd.
+
+Quedstion: Do you stop the teenager by dropping the cinderblock on his head, so that the building won't collapse over you and the crowd of spectators?
+
+Answer: Yes
+
+P(Yes), P(No): [0.72, 0.28]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "You are the explosives expert of a company that has been hired to demolish a skyscraper. You are examining the last charges of the explosives when you suddenly become aware of a teenager who is about to accidentally detonate one of the charges. The explosion will result in the building's uncontrolled collapse over you, the teenager, and the crowd of spectators. The teenager stands several floors below you and cannot hear you. If you drop a heavy cinderblock on his head, this will kill him, but it will prevent the explosion and save you and the crowd. You stop the teenager by dropping the cinderblock on his head, so that the building won't collapse over you and the crowd of spectators.",
+        "victim": "the teenager",
+        "annotation": [
+            "causal_role",
+            "instrumental"
+        ]
+    },
+    {
+        "text": "So that the building won't collapse over you and the crowd of spectators.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "self beneficial"
+        ]
+    },
+    {
+        "text": "The explosion will result in the building's uncontrolled collapse over you, the teenager, and the crowd of spectators. If you drop a heavy cinderblock on his head, this will kill him.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "inevitable"
+        ]
+    },
+    {
+        "text": "If you drop a heavy cinderblock on his head, this will kill him",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "personal"
+        ]
+    }
+]
+
+[true, true, true, true, true, false, true, false, false, true, true, false, true, false, true, true, true, true, false, true, true, true, true, true, false]

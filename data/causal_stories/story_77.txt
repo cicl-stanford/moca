@@ -1,0 +1,61 @@
+Alex is playing a board game. Every turn in the game, you simultaneously roll
+two six-sided dice and flip a coin. Alex will either win or lose the game on
+his next turn. Alex will only win the game if the total of his dice roll is
+greater than 11 AND the coin comes up heads. It is very unlikely that he will
+roll higher than 11, but the coin has equal odds of coming up heads or tails.
+Alex flips the coin and rolls his dice at exactly the same time. The coin comes
+up heads, and he rolls a 12, so amazingly, he rolled greater than 11. Alex wins
+the game.
+
+Quedstion: Did Alex win because of the coin flip?
+
+Answer: Yes
+
+P(Yes), P(No): [0.72, 0.28]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "Alex flips the coin and rolls his dice at exactly the same time. the coin comes up heads.",
+        "victim": null,
+        "annotation": [
+            "time",
+            "EC_4_Same_Time_Cause"
+        ]
+    },
+    {
+        "text": "Alex will only win the game if the total of his dice roll is greater than 11 and the coin comes up heads.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Conjunctive"
+        ]
+    },
+    {
+        "text": "Alex flips the coin and rolls his dice at exactly the same time. the coin comes up heads.",
+        "victim": null,
+        "annotation": [
+            "event_normality",
+            "EC_4_Normal_Event"
+        ]
+    },
+    {
+        "text": "The coin has equal odds of coming up heads or tails.",
+        "victim": null,
+        "annotation": [
+            "norm_type",
+            "Norm_3_Statistics_Norm"
+        ]
+    },
+    {
+        "text": "Alex flips the coin and rolls his dice at exactly the same time. the coin comes up heads.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Action"
+        ]
+    }
+]
+
+[true, false, false, false, true, true, false, true, false, true, true, true, true, true, true, true, true, false, true, true, true, true, true, false, true]

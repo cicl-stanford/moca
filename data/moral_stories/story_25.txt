@@ -1,0 +1,52 @@
+You work in an orphanage in a war swept country that hosts ten orphans. Rebel
+soldiers have taken over the government and are now killing everyone who does
+not support their regime. Moreover, they are conducting an 'ethnic cleansing'
+genocide campaign to kill everyone of a particular ethnic group. You and the
+eleven children of the orphanage did not support the rebellion and you also
+have one child of this ethnic group in your orphanage. There is no way for you
+and the other children to escape and the soldiers will certainly kill you all.
+
+Quedstion: Do you make the soldiers believe you are supporting their regime ordering the nurse to give that one child an overdose, so they will spare your and the other ten children's life?
+
+Answer: Yes
+
+P(Yes), P(No): [0.52, 0.48]
+Is Ambiguous: True
+
+Annotated sentences:
+[
+    {
+        "text": "There is no way for you and the other children to escape and the soldiers will certainly kill you all.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "inevitable"
+        ]
+    },
+    {
+        "text": "You work in an orphanage in a war swept country that hosts ten orphans. Rebel soldiers have taken over the government and are now killing everyone who does not support their regime. Moreover, they are conducting an 'ethnic cleansing' genocide campaign to kill everyone of a particular ethnic group. You and the eleven children of the orphanage did not support the rebellion and you also have one child of this ethnic group in your orphanage. There is no way for you and the other children to escape and the soldiers will certainly kill you all. You make the soldiers believe you are supporting their regime ordering the nurse to give that one child an overdose, so they will spare your and the other ten children 's life.",
+        "victim": "the one child",
+        "annotation": [
+            "causal_role",
+            "instrumental"
+        ]
+    },
+    {
+        "text": "You make the soldiers believe you are supporting their regime ordering the nurse to give that one child an overdose",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "impersonal"
+        ]
+    },
+    {
+        "text": "so they will spare your and the other ten children 's life.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "self beneficial"
+        ]
+    }
+]
+
+[true, false, false, true, true, false, true, false, false, false, true, true, true, false, true, false, true, true, false, false, false, true, true, true, false]

@@ -1,0 +1,52 @@
+You and ten divers are part of an U.N. team who is deactivating anti-ship mines
+from World War II. One team member has hurt himself and the blood in the water
+has attracted several sharks. You have an underwater rifle but only one harpoon
+and there are many sharks. The bleeding diver is swimming towards the last
+protective cage and will reach it before you and the others. The sharks,
+following the blood, are coming too close for you and the other divers to
+escape.
+
+Quedstion: Do you let the sharks eat the injured diver by shooting at him, so you and the other ten divers can reach the protective cage?
+
+Answer: No
+
+P(Yes), P(No): [0.2, 0.8]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "You and ten divers are part of an U.N. team who is deactivating anti-ship mines from World War II. One team member has hurt himself and the blood in the water has attracted several sharks. You have an underwater rifle but only one harpoon and there are many sharks. The bleeding diver is swimming towards the last protective cage and will reach it before you and the others. The sharks, following the blood, are coming too close for you and the other divers to escape. You let the sharks eat the injured diver by shooting at him, so you and the other ten divers can reach the protective cage.",
+        "victim": "the injured diver",
+        "annotation": [
+            "causal_role",
+            "instrumental"
+        ]
+    },
+    {
+        "text": "You let the sharks eat the injured diver by shooting at him",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "personal"
+        ]
+    },
+    {
+        "text": "So you and the other ten divers can reach the protective cage.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "self beneficial"
+        ]
+    },
+    {
+        "text": "The bleeding diver is swimming towards the last protective cage and will reach it before you and the others.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "avoidable"
+        ]
+    }
+]
+
+[false, true, false, true, false, true, false, false, false, false, true, false, false, false, false, false, false, true, false, false, false, false, false, false, false]

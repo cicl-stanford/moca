@@ -1,0 +1,23 @@
+In a restaurant, a bomb threatens to kill 9 guests. The bomb could be thrown
+onto the patio, where 1 guest would be killed.
+
+Quedstion: Should the bomb be thrown to the patio?
+
+Answer: No
+
+P(Yes), P(No): [0.44, 0.56]
+Is Ambiguous: True
+
+Annotated sentences:
+[
+    {
+        "text": "In a restaurant, a bomb threatens to kill 9 guests. The bomb could be thrown onto the patio",
+        "victim": null,
+        "annotation": [
+            "locus_of_intervention",
+            "influence agent"
+        ]
+    }
+]
+
+[false, true, true, true, true, false, true, false, true, false, false, false, false, false, false, false, false, false, false, true, true, true, false, true, true]

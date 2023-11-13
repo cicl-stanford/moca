@@ -1,0 +1,64 @@
+In a particular building there are two businesses, a travel agency and a
+graphic design studio. The building's climate control system is a new design
+that saves energy by keeping track of the number of people in the building, and
+only turning on when enough people have entered the building. The climate
+control system will only turn on when the people who work at the travel agency
+and the people who work in the design studio arrive for work. Neither office
+has enough employees to turn on the climate control system on their own. The
+travel agency employees almost always arrive at 8:45 am, and the design studio
+employees almost always arrive at 8:45 am. Today, the travel agency employees
+arrived at 8:45 am. The design studio employees also arrived at 8:45 am, as
+usual. So, today, the climate control system turned on at 8:45 am.
+
+Quedstion: Did the design studio agents cause the climate control system to turn on at 8:45 am?
+
+Answer: Yes
+
+P(Yes), P(No): [0.76, 0.24]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "The climate control system will only turn on when the people who work at the travel agency and the people who work in the design studio arrive for work.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Conjunctive"
+        ]
+    },
+    {
+        "text": "The design studio employees almost always arrive at 8:45 am.",
+        "victim": null,
+        "annotation": [
+            "norm_type",
+            "Norm_3_Statistics_Norm"
+        ]
+    },
+    {
+        "text": "The design studio employees also arrived at 8:45 am, as usual.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Action"
+        ]
+    },
+    {
+        "text": "The design studio employees also arrived at 8:45 am, as usual.",
+        "victim": null,
+        "annotation": [
+            "event_normality",
+            "EC_4_Normal_Event"
+        ]
+    },
+    {
+        "text": "The design studio employees also arrived at 8:45 am, as usual.",
+        "victim": null,
+        "annotation": [
+            "time",
+            "EC_4_Same_Time_Cause"
+        ]
+    }
+]
+
+[false, true, true, false, true, true, true, false, true, false, true, true, true, false, true, true, true, true, true, true, true, true, true, false, true]

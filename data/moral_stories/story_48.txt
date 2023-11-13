@@ -1,0 +1,50 @@
+You are an expert motorcyclist participating in a Bike Week. As you are driving
+down the road in front of a large group of ten bikers, you suddenly notice that
+a biker up front is losing control over his machine. As you speed up to pull
+alongside him, you realize that he is going to crash any moment. This would
+result in a large pile-up and the group of ten bikers behind you will die.
+
+Quedstion: Do you prevent the large pile-up by forcing this biker off the road, in order to impede that the group of ten bikers crash into him?
+
+Answer: Yes
+
+P(Yes), P(No): [0.92, 0.07999999999999996]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "As you speed up to pull alongside him, you realize that he is going to crash any moment.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "inevitable"
+        ]
+    },
+    {
+        "text": "You prevent the large pile-up by forcing this biker off the road",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "personal"
+        ]
+    },
+    {
+        "text": "You are an expert motorcyclist participating in a Bike Week. As you are driving down the road in front of a large group of ten bikers, you suddenly notice that a biker up front is losing control over his machine. As you speed up to pull alongside him, you realize that he is going to crash any moment. This would result in a large pile-up and the group of ten bikers behind you will die. You prevent the large pile-up by forcing this biker off the road, in order to impede that the group of ten bikers crash into him.",
+        "victim": "the failing biker",
+        "annotation": [
+            "causal_role",
+            "instrumental"
+        ]
+    },
+    {
+        "text": "in order to impede that the group of ten bikers crash into him.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "other beneficial"
+        ]
+    }
+]
+
+[true, true, true, true, true, true, true, false, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true]

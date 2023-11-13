@@ -1,0 +1,50 @@
+You are an expert motorcyclist participating in a Bike Week. As you are driving
+down the road in front of a large group of ten bikers, you suddenly notice that
+a biker up front is losing control over his machine and is falling. You can
+easily evade him yourself but the bikers behind you will crash into each other
+and die in the resulting pile-up.
+
+Quedstion: Do you alert the others about the imminent accident by running your bike into the falling bikers' machine, so the other ten riders will have enough time to drive around him?
+
+Answer: Yes
+
+P(Yes), P(No): [0.64, 0.36]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "You are an expert motorcyclist participating in a Bike Week. As you are driving down the road in front of a large group of ten bikers, you suddenly notice that a biker up front is losing control over his machine and is falling. You can easily evade him yourself but the bikers behind you will crash into each other and die in the resulting pile-up. You alert the others about the imminent accident by running your bike into the falling bikers' machine, so the other ten riders will have enough time to drive around him.",
+        "victim": "the failing biker",
+        "annotation": [
+            "causal_role",
+            "instrumental"
+        ]
+    },
+    {
+        "text": "You alert the others about the imminent accident by running your bike into the falling bikers' machine",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "impersonal"
+        ]
+    },
+    {
+        "text": "You suddenly notice that a biker up front is losing control over his machine and is falling.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "inevitable"
+        ]
+    },
+    {
+        "text": "so the other ten riders will have enough time to drive around him.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "other beneficial"
+        ]
+    }
+]
+
+[false, true, true, false, true, false, true, false, true, true, true, true, true, true, true, false, true, true, false, false, false, true, false, true, true]

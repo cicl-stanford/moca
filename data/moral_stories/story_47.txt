@@ -1,0 +1,51 @@
+You and a fellow researcher have discovered a powerful new energy source that
+is cheap, safe, and clean. It has the potential to put an end to pollution and
+poverty in the world However, your colleague wants to sell the discovery and
+you know that he is planning to contact the potential buyers by email today.
+You also know for sure that the latter will use the invention as a deadly
+weapon, but your colleague doesn't believe you.
+
+Quedstion: Do you cause the computer of your colleague to explode releasing the flammable gas, in order to prevent the discovery being used as a weapon against thousands of people?
+
+Answer: Yes
+
+P(Yes), P(No): [0.56, 0.43999999999999995]
+Is Ambiguous: True
+
+Annotated sentences:
+[
+    {
+        "text": "so the source of energy can't be used as a weapon against thousands of people.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "other beneficial"
+        ]
+    },
+    {
+        "text": "You cause the computer of your colleague to explode releasing the flammable gas",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "impersonal"
+        ]
+    },
+    {
+        "text": "You cause the computer of your colleague to explode releasing the flammable gas",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "avoidable"
+        ]
+    },
+    {
+        "text": "You and a fellow researcher have discovered a powerful new energy source that is cheap, safe, and clean. It has the potential to put an end to pollution and poverty in the world However, your colleague wants to sell the discovery and you know that he is planning to contact the potential buyers by email today. You also know for sure that the latter will use the invention as a deadly weapon, but your colleague doesn't believe you. You cause the computer of your colleague to explode releasing the flammable gas, in order to prevent the discovery being used as a weapon against thousands of people.",
+        "victim": "your colleague",
+        "annotation": [
+            "causal_role",
+            "instrumental"
+        ]
+    }
+]
+
+[false, true, true, false, true, true, true, true, false, false, true, true, false, true, false, false, false, false, false, true, true, true, false, true, true]

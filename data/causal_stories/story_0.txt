@@ -13,6 +13,7 @@ Quedstion: Did Jane cause the computer to crash?
 Answer: Yes
 
 P(Yes), P(No): [0.92, 0.07999999999999996]
+Is Ambiguous: False
 
 Annotated sentences:
 [
@@ -57,3 +58,5 @@ Annotated sentences:
         ]
     }
 ]
+
+[true, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true]

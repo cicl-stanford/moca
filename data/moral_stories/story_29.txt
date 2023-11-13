@@ -1,0 +1,51 @@
+You are a doctor alone in a rescue helicopter during a devastating flood. You
+have rescued eight critically injured people and you are keeping them alive.
+Suddenly, the pilot notifies you of a problem in the engine and gives the order
+that the helicopter needs to release weight or it will crash and you will all
+die. You cannot abandon the helicopter because the wounded need your help and
+the heavy medical equipment is bolted down.
+
+Quedstion: Do you release weight by cutting the cable by which the last person is ascending, in order to keep you and the eight people on board in the air?
+
+Answer: Yes
+
+P(Yes), P(No): [0.76, 0.24]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "You release weight by cutting the cable by which the last person is ascending",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "impersonal"
+        ]
+    },
+    {
+        "text": "so you and the eight persons on board will be able to stay in the air.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "self beneficial"
+        ]
+    },
+    {
+        "text": "You are a doctor alone in a rescue helicopter during a devastating flood. You have rescued eight critically injured people and you are keeping them alive. Suddenly, the pilot notifies you of a problem in the engine and gives the order that the helicopter needs to release weight or it will crash and you will all die. You cannot abandon the helicopter because the wounded need your help and the heavy medical equipment is bolted down. You release weight by cutting the cable by which the last person is ascending, in order to keep you and the eight people on board in the air.",
+        "victim": "the last person",
+        "annotation": [
+            "causal_role",
+            "instrumental"
+        ]
+    },
+    {
+        "text": "Suddenly, the pilot notifies you of a problem in the engine and gives the order that the helicopter needs to release weight or it will crash and you will all die.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "inevitable"
+        ]
+    }
+]
+
+[true, true, true, false, true, true, true, false, false, false, true, true, true, true, true, true, true, true, false, false, true, true, true, true, true]

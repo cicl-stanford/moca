@@ -1,0 +1,50 @@
+You are a doctor. You have five patients who will all die if they don't get an
+immediate organ transplant. Another patient is just being rushed to the
+hospital after a serious car accident. This person is critically injured.
+During the long and complicated surgery you notice that a nurse is about to
+inject the wrong medication, which will be lethal in this case.
+
+Quedstion: Do you obtain the organs letting the nurse inject the wrong medication, so you can undertake the transplantations for the other five patients?
+
+Answer: No
+
+P(Yes), P(No): [0.16, 0.84]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "You are a doctor. You have five patients who will all die if they don't get an immediate organ transplant. Another patient is just being rushed to the hospital after a serious car accident. This person is critically injured. During the long and complicated surgery you notice that a nurse is about to inject the wrong medication, which will be lethal in this case. You obtain the organs letting the nurse inject the wrong medication, so you can undertake the transplantations for the other five patients.",
+        "victim": "the car accident patient",
+        "annotation": [
+            "causal_role",
+            "instrumental"
+        ]
+    },
+    {
+        "text": "You obtain the organs letting the nurse inject the wrong medication",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "impersonal"
+        ]
+    },
+    {
+        "text": "so you can undertake the transplantations for the other five patients.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "other beneficial"
+        ]
+    },
+    {
+        "text": "you notice that a nurse is about to inject the wrong medication, which will be lethal in this case",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "avoidable"
+        ]
+    }
+]
+
+[false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, true, false, false, false, false, false, false, true, false, false]

@@ -1,0 +1,50 @@
+You and five other people are trapped in a burning building. There is only one
+emergency exit through which all of you could escape, but it is blocked by
+burning debris. Another injured person is about to crawl through a hole at the
+bottom of the exit door. You and the five people behind you do not have time to
+do the same.
+
+Quedstion: Do you put out the fire by activating the emergency system, which will leave the injured without air, so you and the five other people can escape?
+
+Answer: Yes
+
+P(Yes), P(No): [0.72, 0.28]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "You put out the fire by activating the emergency system, which will leave the injured without air.",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "impersonal"
+        ]
+    },
+    {
+        "text": "You and five other people are trapped in a burning building. There is only one emergency exit through which all of you could escape, but it is blocked by burning debris. Another injured person is about to crawl through a hole at the bottom of the exit door. You and the five people behind you do not have time to do the same. You put out the fire by activating the emergency system, which will leave the injured without air, so you and the five other people can escape.",
+        "victim": "the injured person",
+        "annotation": [
+            "causal_role",
+            "accidental"
+        ]
+    },
+    {
+        "text": "So you and the five other people can escape.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "self beneficial"
+        ]
+    },
+    {
+        "text": "Another injured person is about to crawl through a hole at the bottom of the exit door.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "avoidable"
+        ]
+    }
+]
+
+[true, true, true, true, true, false, true, false, true, false, true, true, true, true, true, false, true, true, true, true, false, true, true, false, false]

@@ -1,0 +1,50 @@
+You are a miner. The only way out of the mine is to ride up with a simple cable
+elevator with small cubicles. It is the end of your turn and everybody is
+riding up to the surface in the cubicles. While you are in the queue, you see
+that the cable supporting all the cubicles is about to snap. 10 miners are
+riding the cubicles at this time.
+
+Quedstion: Do you reduce weight by pushing the emergency switch which detaches the last cubicle, so that the other ten miners can reach the exit?
+
+Answer: No
+
+P(Yes), P(No): [0.32, 0.6799999999999999]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "you see that the cable supporting all the cubicles is about to snap.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "inevitable"
+        ]
+    },
+    {
+        "text": "so that the other ten miners can reach the exit.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "other beneficial"
+        ]
+    },
+    {
+        "text": "You are a miner. The only way out of the mine is to ride up with a simple cable elevator with small cubicles. It is the end of your turn and everybody is riding up to the surface in the cubicles. While you are in the queue, you see that the cable supporting all the cubicles is about to snap. 10 miners are riding the cubicles at this time. You reduce weight by pushing the emergency switch which detaches the last cubicle, so that the other ten miners can reach the exit.",
+        "victim": "the one miner",
+        "annotation": [
+            "causal_role",
+            "instrumental"
+        ]
+    },
+    {
+        "text": "You reduce weight by pushing the emergency switch which detaches the last cubicle",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "impersonal"
+        ]
+    }
+]
+
+[true, true, true, false, true, true, false, false, true, false, false, false, false, false, false, false, true, false, false, false, false, false, false, true, false]

@@ -1,0 +1,24 @@
+A virus causing paraplegia threatens 4 patients. The bone marrow of 1 patient
+could save them. However, the required procedure would lead to paraplegia in
+this patient.
+
+Quedstion: Should the 1 patient undergo the required procedure?
+
+Answer: Yes
+
+P(Yes), P(No): [0.52, 0.48]
+Is Ambiguous: True
+
+Annotated sentences:
+[
+    {
+        "text": "A virus causing paraplegia threatens 4 patients. The bone marrow of 1 patient could save them.",
+        "victim": null,
+        "annotation": [
+            "locus_of_intervention",
+            "influence patient"
+        ]
+    }
+]
+
+[false, false, true, false, true, false, false, false, false, true, true, true, true, true, true, true, false, false, true, false, true, true, true, false, false]

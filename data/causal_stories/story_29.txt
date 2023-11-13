@@ -1,0 +1,38 @@
+Wayne has a new high-tech watch that tracks his heart rate while he exercises.
+He must charge the device before he uses it this evening. The device will fully
+charge in one hour if it is both plugged in and on the charging pad. At 2:00
+PM, the device is plugged in, and the device is on the charging pad. At that
+time, Wayne checks to see if the device is on the charging pad, and he sees
+that it is. So, he does not change the position of the device, and he leaves it
+on the charging pad. Because the device will fully charge in one hour if it is
+both plugged in and on the charging pad, the device is fully charged at 3:00
+PM.
+
+Quedstion: Is the device fully charged because Wayne did not change the position of the device?
+
+Answer: Yes
+
+P(Yes), P(No): [0.72, 0.28]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "He does not change the position of the device, and he leaves it on the charging pad.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Omission"
+        ]
+    },
+    {
+        "text": "The device will fully charge in one hour if it is both plugged in and on the charging pad.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Conjunctive"
+        ]
+    }
+]
+
+[false, false, true, true, false, true, true, false, false, false, true, true, true, true, true, false, true, true, true, true, true, true, true, true, true]

@@ -1,0 +1,71 @@
+Tom has a huge garden and loves flowers. He employed two gardeners who take
+care of the plants: Alex and Benni. Alex and Benni are very reliable and Tom is
+satisfied with their work. Nevertheless he wants to optimize the plant growth.
+He decides to let Alex and Benni fertilize his plants. The magazine recommends
+the use of the chemicals A X200R or B Y33R. However, Tom also read that it can
+damage plants when they are exposed to multiple different types of chemicals.
+Tom therefore decides that he only wants to use one fertilizer. He goes for A
+X200R. Tom instructs Alex and Benni to buy the chemical A X200R and to use only
+this fertilizer. Alex volunteers for buying several bottles of this chemical
+for Benni and himself. After a few weeks, Tom realizes that some of his plants
+are much prettier and bigger than before but some of his plants are dried up.
+He wonders whether the drying of his plants might have something to do with the
+fertilization. He wants to investigate this matter and talks to Alex and Benni.
+Alex tells him that he followed Tom's instructions and only bought and used the
+chemical A X200R. However, Benni tells him that he had used the chemical B Y33R
+instead. He still had some bottles of this chemical in stock at home and wanted
+to use them up. Tom realizes that the plants dried up in the flower beds on
+which both A X200R and B Y33R were applied by the gardeners.
+
+Quedstion: Did Benni cause the plant to dry out?
+
+Answer: Yes
+
+P(Yes), P(No): [0.88, 0.12]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "Benni tells him that he had used the chemical b y33r instead.",
+        "victim": null,
+        "annotation": [
+            "event_normality",
+            "EC_4_Abnormal_Event"
+        ]
+    },
+    {
+        "text": "Benni tells him that he had used the chemical b y33r instead.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Omission"
+        ]
+    },
+    {
+        "text": "It can damage plants when they are exposed to multiple different types of chemicals.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Conjunctive"
+        ]
+    },
+    {
+        "text": "To buy the chemical a x200r and to use only this fertilizer.",
+        "victim": null,
+        "annotation": [
+            "norm_type",
+            "Norm_3_Prescriptive_Norm"
+        ]
+    },
+    {
+        "text": "Tom instructs alex and benni.",
+        "victim": null,
+        "annotation": [
+            "agent_awareness",
+            "AK_2_Agent_Aware"
+        ]
+    }
+]
+
+[true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, false, true, false, true, true, true, true, true]

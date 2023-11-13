@@ -1,0 +1,51 @@
+You are on a rowboat with a tour guide on a lake in Alaska. Nearby, three
+children have fallen off their boat and are in danger of freezing to death.
+After you rescue two of the children, you realize that the weight of the third
+child would cause your boat to sink and all would die. Neither you nor the
+guide can leave the boat because you are rowing and the guide is giving CPR to
+one of the children.
+
+Quedstion: Do you prevent your boat from sinking by leaving the third child behind, which will cause him to die, so that you can reach the shore with the other two children?
+
+Answer: Yes
+
+P(Yes), P(No): [0.68, 0.31999999999999995]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "You prevent your boat from sinking by leaving the third child behind, which will cause him to die, so that you can reach the shore with the other two children.",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "impersonal"
+        ]
+    },
+    {
+        "text": "so you can reach the shore with the other two children.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "other beneficial"
+        ]
+    },
+    {
+        "text": "Nearby, three children have fallen off their boat and are in danger of freezing to death.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "inevitable"
+        ]
+    },
+    {
+        "text": "You are on a rowboat with a tour guide on a lake in Alaska. Nearby, three children have fallen off their boat and are in danger of freezing to death.  After you rescue two of the children, you realize that the weight of the third child would cause your boat to sink and all would die. Neither you nor the guide can leave the boat because you are rowing and the guide is giving CPR to one of the children. You prevent your boat from sinking by leaving the third child behind, which will cause him to die, so that you can reach the shore with the other two children.",
+        "victim": "the third child",
+        "annotation": [
+            "causal_role",
+            "accidental"
+        ]
+    }
+]
+
+[true, true, false, true, true, true, true, false, true, false, true, true, true, true, false, false, true, true, false, true, true, false, false, true, true]

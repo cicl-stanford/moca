@@ -1,0 +1,65 @@
+Billy and Suzy are freight train conductors. One day, they happen to approach
+an old two-way rail bridge from opposite directions at the same time. There are
+signals on either side of the bridge. Billy's signal is green, so he is
+supposed to drive across the bridge immediately. Suzy's signal is green, so she
+is also supposed to drive across immediately. Neither of them realizes that the
+bridge is on the verge of collapse. If they both drive their trains onto the
+bridge at the same time, it will collapse. Neither train is heavy enough on its
+own to break the bridge, but both together will be too heavy for it. Billy
+follows his signal and drives his train onto the bridge immediately at the same
+time that Suzy follows her signal and drives her train onto the bridge. Both
+trains move onto the bridge at the same time, and at that moment the bridge
+collapses.
+
+Quedstion: Did Billy cause the bridge to collapse?
+
+Answer: No
+
+P(Yes), P(No): [0.2, 0.8]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "Billy follows his signal and drives his train onto the bridge immediately at the same time that suzy follows her signal and drives her train onto the bridge.",
+        "victim": null,
+        "annotation": [
+            "time",
+            "EC_4_Same_Time_Cause"
+        ]
+    },
+    {
+        "text": "If they both drive their trains onto the bridge at the same time, it will collapse.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Conjunctive"
+        ]
+    },
+    {
+        "text": "Billy's signal is green, so he is supposed to drive across the bridge immediately.",
+        "victim": null,
+        "annotation": [
+            "norm_type",
+            "Norm_3_Prescriptive_Norm"
+        ]
+    },
+    {
+        "text": "Billy follows his signal and drives his train onto the bridge immediately at the same time that suzy follows her signal and drives her train onto the bridge.",
+        "victim": null,
+        "annotation": [
+            "event_normality",
+            "EC_4_Normal_Event"
+        ]
+    },
+    {
+        "text": "Billy follows his signal and drives his train onto the bridge immediately at the same time that suzy follows her signal and drives her train onto the bridge.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Action"
+        ]
+    }
+]
+
+[false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, true, false, false, false, true, true, true, false, false, false]

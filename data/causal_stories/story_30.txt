@@ -1,0 +1,47 @@
+Laurie likes GC brand coffee. GC is doing a new promotion for their new coffee
+flavor where customers can receive a free sample. Customers will receive a free
+sample if either they have previously purchased coffee beans from GC or they
+are subscribed to the GC email list. Laurie has previously purchased coffee
+beans from GC, and she is not subscribed to the GC email list. When she hears
+about the promotion, Laurie checks to see if she is subscribed to the email
+list, and she sees that she is not. So, she changes her subscription status,
+and she subscribes to the email list. Because customers will receive a free
+sample if either they have previously purchased coffee beans from GC or they
+are subscribed to the GC email list, Laurie receives a free sample.
+
+Quedstion: Did Laurie receive a free sample because she changed her subscription status?
+
+Answer: No
+
+P(Yes), P(No): [0.32, 0.6799999999999999]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "Laurie checks to see if she is subscribed to the email list, and she sees that she is not. so, she changes her subscription status, and she subscribes to the email list.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Action"
+        ]
+    },
+    {
+        "text": "Customers will receive a free sample if either they have previously purchased coffee beans from gc or they are subscribed to the gc email list.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Disjunctive"
+        ]
+    },
+    {
+        "text": "When she hears about the promotion.",
+        "victim": null,
+        "annotation": [
+            "agent_awareness",
+            "AK_2_Agent_Aware"
+        ]
+    }
+]
+
+[true, true, true, true, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, false, true, true, false, false, false]

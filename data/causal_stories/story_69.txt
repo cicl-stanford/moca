@@ -1,0 +1,23 @@
+Bill's wife, Sue, is out of town for the weekend. She leaves Bill a message
+that says, 'I just saw this marvelous bookend. It's called a Bartlett bookend.
+So pretty! I'm going to go back tomorrow and get one. It will be perfect for
+the left side of our bookshelf'. Bill goes and visits his friend. Bill and his
+friend talk for a while, and when Bill asks if his friend is willing to sell
+the bookend, his friend tells him it's a precious heirloom and he can't part
+with it. Bill waits until later when his friend is in the bathroom, and slips
+the bookend into his bag. Finally, Bill leaves his friend's house with the
+stolen right-side Bartlett bookend in his bag. Then the next day, Sue goes and
+buys the left-side Bartlett bookend. So, when Sue got home, they had the paired
+set of bookends.
+
+Quedstion: Did Bill cause them to possess the paired set of bookends?
+
+Answer: Yes
+
+P(Yes), P(No): [0.84, 0.16000000000000003]
+Is Ambiguous: False
+
+Annotated sentences:
+[]
+
+[true, false, true, false, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, true, true, true]

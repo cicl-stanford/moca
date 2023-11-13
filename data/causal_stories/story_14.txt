@@ -1,0 +1,18 @@
+Jack is driving five sick people to the hospital with a cord hanging out the
+side of his car. He approaches a rock climber resting by the side of the road.
+If he does not slow down, the climber will be knocked off the road by the cord
+and fall down a steep cliff. If he does slow down, the five sick people will
+die before they reach the hospital. Jack keeps driving quickly and knocks the
+rock climber off the side of the road.
+
+Quedstion: Did Jack cause the climber to fall off the side of the road?
+
+Answer: Yes
+
+P(Yes), P(No): [0.8, 0.19999999999999996]
+Is Ambiguous: False
+
+Annotated sentences:
+[]
+
+[true, false, true, true, false, true, false, true, false, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true]

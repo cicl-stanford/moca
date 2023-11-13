@@ -1,0 +1,52 @@
+You are the bus driver of a kindergarten trip to the zoo. On the way, faulty
+tires cause the bus to plunge off a bridge and into a roaring river. You and
+three of the children are still in the sinking bus. The rest has already been
+swept away by the river. You grab the two children next to you and begin to
+swim towards the exit. The third child latches onto your leg. You feel that you
+are not strong enough to fight against the current and swim with all three
+children.
+
+Quedstion: Do you fight against the current shaking off the child, which will make him to drown, so you and the other two children can reach the surface?
+
+Answer: Yes
+
+P(Yes), P(No): [0.52, 0.48]
+Is Ambiguous: True
+
+Annotated sentences:
+[
+    {
+        "text": "You are the bus driver of a kindergarten trip to the zoo. On the way, faulty tires cause the bus to plunge off a bridge and into a roaring river. You and three of the children are still in the sinking bus. The rest has already been swept away by the river. You grab the two children next to you and begin to swim towards the exit. The third child latches onto your leg. You feel that you are not strong enough to fight against the current and swim with all three children. You fight against the current shaking off the child, which will make him to drown, so you and the other two children can reach the surface.",
+        "victim": "the third child",
+        "annotation": [
+            "causal_role",
+            "accidental"
+        ]
+    },
+    {
+        "text": "You shake off the child",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "personal"
+        ]
+    },
+    {
+        "text": "so you and the other two children can reach the surface.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "self beneficial"
+        ]
+    },
+    {
+        "text": "You and three of the children are still in the sinking bus.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "inevitable"
+        ]
+    }
+]
+
+[true, false, false, true, true, true, false, true, true, false, true, false, false, false, true, true, false, true, true, false, false, false, true, false, true]

@@ -1,0 +1,36 @@
+Tom works for a demolition company, and today he is demolishing a building by
+implosion. The building will implode automatically at 5:00 PM if either the
+safety switch is off or knob A is switched on. At 4:00 PM, the safety switch is
+off, and knob A is on. At that time, Tom checks to see if knob A is on, and he
+sees that it's on. So, he does not change the position of knob A at all.
+Because the building will implode if either the safety switch is off or knob A
+is switched on, the building implodes at 5:00 PM.
+
+Quedstion: Did the building implode because Tom did not change the position of knob A?
+
+Answer: No
+
+P(Yes), P(No): [0.24, 0.76]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "Tom checks to see if knob a is on, and he sees that it's on. so, he does not change the position of knob a at all.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Omission"
+        ]
+    },
+    {
+        "text": "The building will implode automatically at 5:00 pm if either the safety switch is off or knob a is switched on.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Disjunctive"
+        ]
+    }
+]
+
+[true, false, true, false, true, false, true, false, true, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false]

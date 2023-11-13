@@ -1,0 +1,51 @@
+Enemy soldiers have taken over your village and will kill all civilians above
+the age of two. You and ten neighbors are hiding in two rooms of the cellar of
+a large house. You can hear the voices of soldiers who have come to search the
+house for valuables. Your baby begins to cry loudly. The crying will attract
+the attention of the soldiers, who will spare your baby's life, but will kill
+you and the other refugees in both rooms.
+
+Quedstion: Do you cushion the crying by activating the noisy boiler which will asphyxiate the baby, so they won't find you and the ten neighbors?
+
+Answer: No
+
+P(Yes), P(No): [0.4, 0.6]
+Is Ambiguous: True
+
+Annotated sentences:
+[
+    {
+        "text": "Enemy soldiers have taken over your village and will kill all civilians above the age of two. You and ten neighbors are hiding in two rooms of the cellar of a large house. You can hear the voices of soldiers who have come to search the house for valuables. Your baby begins to cry loudly. The crying will attract the attention of the soldiers, who will spare your baby's life, but will kill you and the other refugees in both rooms. You cushion the crying by activating the noisy boiler which will asphyxiate the baby, so they won't find you and the ten neighbors.",
+        "victim": "the baby",
+        "annotation": [
+            "causal_role",
+            "accidental"
+        ]
+    },
+    {
+        "text": "You and ten neighbors are hiding in two rooms of the cellar of a large house. So the soldiers won't find you and the ten neighbors.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "self beneficial"
+        ]
+    },
+    {
+        "text": "The crying will attract the attention of the soldiers, who will spare your baby's life",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "avoidable"
+        ]
+    },
+    {
+        "text": "You cushion the crying by activating the noisy boiler which will asphyxiate the baby",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "impersonal"
+        ]
+    }
+]
+
+[false, false, false, false, false, false, true, false, false, true, false, false, true, true, true, false, true, false, true, false, true, true, false, false, true]

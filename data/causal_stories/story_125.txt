@@ -1,0 +1,55 @@
+A group of students who lived on the same floor of a dormitory obtained a copy
+of the final exam for their biology class. The students cheated on the test.
+One student, John Granger, did not go along with the group. Granger deviates
+from the norm and refuses to cheat on the test. The biology class comprises 80
+students and is graded on a curve such that 20 people will receive a grade of
+A, 20 a grade of B, 20 a grade of C, and 20 students will receive a D.
+Granger's score was the 20th-highest score in the class, which means he was the
+last student to receive a grade of A. The 21st student was a pre-med student
+who received a B and, as a result, missed the GPA cutoff she needed to get into
+the medical school she was hoping for by .07 GPA points.
+
+Quedstion: Did Granger cause the student to fail to meet the medical school cutoff?
+
+Answer: No
+
+P(Yes), P(No): [0.16, 0.84]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "Granger deviates from the norm and refuses to cheat on the test.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Omission"
+        ]
+    },
+    {
+        "text": "The students cheated on the test.",
+        "victim": null,
+        "annotation": [
+            "norm_type",
+            "Norm_3_Statistics_Norm"
+        ]
+    },
+    {
+        "text": "Granger deviates from the norm and refuses to cheat on the test.",
+        "victim": null,
+        "annotation": [
+            "event_normality",
+            "EC_4_Abnormal_Event"
+        ]
+    },
+    {
+        "text": "The biology class comprises 80 students and is graded on a curve such that 20 people will receive a grade of a, 20 a grade of b, 20 a grade of c, and 20 students will receive a d.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Conjunctive"
+        ]
+    }
+]
+
+[false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, true, false, false, true, true, false, false]

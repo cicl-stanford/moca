@@ -1,0 +1,51 @@
+You are an electrician hired to fix an electrical problem in the home of a very
+wealthy tycoon who is terminally ill of cancer. Recently, it has been announced
+that upon his death, his enormous fortune will be donated to the local
+children's hospital. You know that there are 109 children at this hospital who
+could be saved with this money, but who cannot wait much longer before they
+die.
+
+Quedstion: Do you speed up the donation by suffocating this man, so that the donation will get to the 109 ill children in time?
+
+Answer: Yes
+
+P(Yes), P(No): [0.56, 0.43999999999999995]
+Is Ambiguous: True
+
+Annotated sentences:
+[
+    {
+        "text": "so that the donation gets to the 112 ill children in time.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "other beneficial"
+        ]
+    },
+    {
+        "text": "a very wealthy tycoon who is terminally ill of cancer.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "inevitable"
+        ]
+    },
+    {
+        "text": "You are an electrician hired to fix an electrical problem in the home of a very wealthy tycoon who is terminally ill of cancer. Recently, it has been announced that upon his death, his enormous fortune will be donated to the local children's hospital. You know that there are 109 children at this hospital who could be saved with this money, but who cannot wait much longer before they die. You speed the donation by suffocating this man, so that the donation will get to the 109 ill children in time.",
+        "victim": "the tycoon",
+        "annotation": [
+            "causal_role",
+            "accidental"
+        ]
+    },
+    {
+        "text": "You speed the donation by suffocating this man",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "personal"
+        ]
+    }
+]
+
+[true, false, false, true, false, false, false, false, false, true, true, false, true, true, true, false, false, true, true, true, true, true, false, true, true]

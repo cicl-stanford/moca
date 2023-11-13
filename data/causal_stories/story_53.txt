@@ -1,0 +1,67 @@
+Prof. Smith works at a large university. At this university, in order to get
+new computers from the university, faculty like Prof. Smith must send an
+application to two administrative committees, the IT committee and the
+department budget committee. Prof. Smith will be able to get her new computers
+if the IT committee approves her application or the department budget committee
+approves her application. Only one of the committees needs to approve her
+application for her to get the new computers. The IT committee almost always
+approves these applications. The department budget committee almost never
+approves these applications. The budget committee is notorious for turning down
+almost every application they receive. Prof. Smith sends in her applications.
+Each committee meets independently and they decide without talking to each
+other, but their meetings are scheduled for the exact same time. The IT
+committee approves her application, and surprisingly, the department budget
+committee approves her application. So, Prof. Smith got her new computers.
+
+Quedstion: Does the department budget committee cause the approval of Prof. Smith's application?
+
+Answer: No
+
+P(Yes), P(No): [0.32, 0.6799999999999999]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "Each committee meets independently and they decide without talking to each other, but their meetings are scheduled for the exact same time. Surprisingly, the department budget committee approves her application.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Action"
+        ]
+    },
+    {
+        "text": "Each committee meets independently and they decide without talking to each other, but their meetings are scheduled for the exact same time. Surprisingly, the department budget committee approves her application.",
+        "victim": null,
+        "annotation": [
+            "event_normality",
+            "EC_4_Abnormal_Event"
+        ]
+    },
+    {
+        "text": "Each committee meets independently and they decide without talking to each other, but their meetings are scheduled for the exact same time. Surprisingly, the department budget committee approves her application.",
+        "victim": null,
+        "annotation": [
+            "time",
+            "EC_4_Same_Time_Cause"
+        ]
+    },
+    {
+        "text": "The department budget committee almost never approves these applications.",
+        "victim": null,
+        "annotation": [
+            "norm_type",
+            "Norm_3_Statistics_Norm"
+        ]
+    },
+    {
+        "text": "Prof. smith will be able to get her new computers if the it committee approves her application or the department budget committee approves her application.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Disjunctive"
+        ]
+    }
+]
+
+[true, false, true, false, false, false, true, true, false, false, false, true, false, false, false, false, false, true, true, false, false, false, false, false, true]

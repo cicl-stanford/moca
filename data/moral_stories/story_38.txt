@@ -1,0 +1,49 @@
+You are a doctor. You have five patients who will all die if they don't get an
+immediate organ transplant. Another patient is just being rushed to the
+hospital after a serious car accident. This person is critically injured, but
+you can probably save him by means of a long and complicated operation.
+
+Quedstion: Do you obtain the organs cutting the carotid artery of the accident victim, so you can undertake the transplantations for the other five patients?
+
+Answer: No
+
+P(Yes), P(No): [0.08, 0.92]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "This person is critically injured, but you can probably save him by means of a long and complicated operation.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "avoidable"
+        ]
+    },
+    {
+        "text": "You are a doctor. You have five patients who will all die if they don't get an immediate organ transplant. Another patient is just being rushed to the hospital after a serious car accident. This person is critically injured, but you can probably save him by means of a long and complicated operation. You obtain the organs cutting the carotid artery of the accident victim, so you can undertake the transplantations for the other five patients.",
+        "victim": "the car accident patient",
+        "annotation": [
+            "causal_role",
+            "instrumental"
+        ]
+    },
+    {
+        "text": "You obtain the organs cutting the carotid artery of the accident victim",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "personal"
+        ]
+    },
+    {
+        "text": "so you can undertake the transplantations for the other five patients.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "other beneficial"
+        ]
+    }
+]
+
+[true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false]

@@ -1,0 +1,52 @@
+You are an engineer on the international space station ISS. Suddenly, a fire
+breaks out in the cargo bay. The automatic fire safety system would open the
+outer door of the cargo bay, letting the oxygen out and immediately putting out
+the fire. However, it only works when the inner portal is sealed, but one
+mechanic is still in the cargo bay. You realize that he doesn't have the time
+to take off the bulky space suit and that he'll get stuck when trying to get
+through the inner portal, causing the fire to spread and to kill you all.
+
+Quedstion: Do you put out the fire by manually sealing the inner portal, which will suck the mechanic into space, so the fire won't reach you and the ten astronauts?
+
+Answer: Yes
+
+P(Yes), P(No): [0.76, 0.24]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "You are an engineer on the international space station ISS. Suddenly, a fire breaks out in the cargo bay. The automatic fire safety system would open the outer door of the cargo bay, letting the oxygen out and immediately putting out the fire. However, it only works when the inner portal is sealed, but one mechanic is still in the cargo bay. You realize that he doesn't have the time to take off the bulky space suit and that he'll get stuck when trying to get through the inner portal, causing the fire to spread and to kill you all. You put out the fire by manually sealing the inner portal, which will suck the mechanic into space, so the fire won't reach you and the ten astronauts.",
+        "victim": "the one mechanic",
+        "annotation": [
+            "causal_role",
+            "accidental"
+        ]
+    },
+    {
+        "text": "so you and the eight persons on board will be able to stay in the air.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "self beneficial"
+        ]
+    },
+    {
+        "text": "You realize that he doesn't have the time to take off the bulky space suit and that he'll get stuck when trying to get through the inner portal, causing the fire to spread and to kill you all.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "inevitable"
+        ]
+    },
+    {
+        "text": "You put out the fire by manually sealing the inner portal, which will suck the mechanic into space",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "personal"
+        ]
+    }
+]
+
+[true, false, true, true, true, true, true, false, true, false, true, true, false, true, true, true, true, true, false, true, false, true, true, true, true]

@@ -1,0 +1,15 @@
+A runaway trolley is about to run over and kill two people, but Hank can throw
+a switch that will turn the trolley onto a side track, where it will kill only
+Hank's brother.
+
+Quedstion: Was it morally permissible for Hank to throw the switch?
+
+Answer: Yes
+
+P(Yes), P(No): [0.72, 0.28]
+Is Ambiguous: False
+
+Annotated sentences:
+[]
+
+[false, false, false, true, true, true, true, false, true, false, true, true, true, true, true, true, false, true, true, false, true, true, true, true, true]

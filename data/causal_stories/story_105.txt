@@ -1,0 +1,47 @@
+Janet is an employee in a factory. Since she works in the maintenance
+department, she knows how to grease and oil all of the machines in the factory.
+It is her responsibility to put oil into the machines. Kate is also an employee
+at the factory. While she works in the human resources department, she knows
+how to grease and oil all of the machines in the factory. If Janet does not put
+oil in the machines, it is not Kate's responsibility to do so. One day, Janet
+forgets to put oil in an important machine. Janet did not notice that she did
+not put oil in the machine. Kate also did not notice that Janet did not put oil
+in the machine, and Kate did not put oil in the machine. The machine broke down
+a few days later.
+
+Quedstion: Did Kate not putting oil in the machine cause it to break down?
+
+Answer: No
+
+P(Yes), P(No): [0.4, 0.6]
+Is Ambiguous: True
+
+Annotated sentences:
+[
+    {
+        "text": "Kate did not put oil in the machine.",
+        "victim": null,
+        "annotation": [
+            "event_normality",
+            "EC_4_Normal_Event"
+        ]
+    },
+    {
+        "text": "If janet does not put oil in the machines, it is not kate's responsibility to do so.",
+        "victim": null,
+        "annotation": [
+            "norm_type",
+            "Norm_3_Prescriptive_Norm"
+        ]
+    },
+    {
+        "text": "Kate did not put oil in the machine.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Omission"
+        ]
+    }
+]
+
+[false, false, false, false, false, false, true, false, false, true, false, false, true, false, false, false, true, true, true, true, false, true, false, true, true]

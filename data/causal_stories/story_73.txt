@@ -1,0 +1,73 @@
+Billy and Suzy work for the same company. They work in different rooms and both
+of them sometimes need to access the central computer of the company. Nobody at
+the company is aware that if two people are logged into the central computer at
+the same time, some spam emails containing dangerous viruses are immediately
+deleted from the central computer. In order to make sure that one person is
+always available to answer incoming phone calls, the company issued the
+following official policy: Suzy is the only one permitted to log into the
+central computer in the mornings, whereas Billy is the only one permitted to
+log into the central computer in the afternoons. Billy is not permitted to log
+into the central computer in the morning. Today at 9 am, Billy and Suzy both
+log into the central computer at the same time. Immediately, some work emails
+containing dangerous viruses are deleted from the central computer.
+
+Quedstion: Did Suzy cause the central computer to delete some work emails containing dangerous viruses?
+
+Answer: Yes
+
+P(Yes), P(No): [0.68, 0.31999999999999995]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "Suzy is the only one permitted to log into the central computer in the mornings.",
+        "victim": null,
+        "annotation": [
+            "norm_type",
+            "Norm_3_Prescriptive_Norm"
+        ]
+    },
+    {
+        "text": "If two people are logged into the central computer at the same time, some spam emails containing dangerous viruses are immediately deleted from the central computer.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Conjunctive"
+        ]
+    },
+    {
+        "text": "Nobody at the company is aware.",
+        "victim": null,
+        "annotation": [
+            "agent_awareness",
+            "AK_2_Agent_Unaware"
+        ]
+    },
+    {
+        "text": "Today at 9 am, billy and suzy both log into the central computer at the same time.",
+        "victim": null,
+        "annotation": [
+            "time",
+            "EC_4_Same_Time_Cause"
+        ]
+    },
+    {
+        "text": "Today at 9 am, billy and suzy both log into the central computer at the same time.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Action"
+        ]
+    },
+    {
+        "text": "Today at 9 am, billy and suzy both log into the central computer at the same time.",
+        "victim": null,
+        "annotation": [
+            "event_normality",
+            "EC_4_Normal_Event"
+        ]
+    }
+]
+
+[false, true, false, false, false, false, false, false, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]

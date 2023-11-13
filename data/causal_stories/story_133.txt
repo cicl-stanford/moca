@@ -1,0 +1,53 @@
+Alice and Zoe work for the same company. They work in different rooms and both
+of them sometimes need to access the central computer of the company.
+Unbeknownst to everybody, if two people are logged in to the central computer
+at the same time, an empty email is immediately sent from the central computer
+to a non-existent email address. One day, Zoe logs in to the central computer
+at 9 am. The same day, Alice logs in at 9:30 am, when Zoe is already logged in.
+Immediately, an empty email is sent from the central computer to a non-existent
+email address.
+
+Quedstion: Did Zoe cause an empty email to be sent from the central computer to a non-existent email address?
+
+Answer: No
+
+P(Yes), P(No): [0.2, 0.8]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "One day, zoe logs in to the central computer at 9 am. the same day, alice logs in at 9:30 am, when zoe is already logged in.",
+        "victim": null,
+        "annotation": [
+            "time",
+            "EC_4_Early_Cause"
+        ]
+    },
+    {
+        "text": "One day, zoe logs in to the central computer at 9 am. the same day, alice logs in at 9:30 am, when zoe is already logged in.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Action"
+        ]
+    },
+    {
+        "text": "Unbeknownst to everybody.",
+        "victim": null,
+        "annotation": [
+            "agent_awareness",
+            "AK_2_Agent_Unaware"
+        ]
+    },
+    {
+        "text": "If two people are logged in to the central computer at the same time, an empty email is immediately sent from the central computer to a non-existent email address.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Conjunctive"
+        ]
+    }
+]
+
+[false, false, false, true, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, true, false]

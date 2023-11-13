@@ -1,0 +1,53 @@
+You are the leader of a small group of soldiers. You are on your way back from
+a mission in enemy territory when one of your men steps in a trap that catches
+his leg, injuring him badly. You cannot free him without killing him, but if
+you leave him behind, enemy troops will torture him until he reveals the
+position of an important allied base camp. After that the soldiers will attack
+this camp and kill the 10 soldiers of the platoon there. The soldier begs you
+not to leave him behind, but the enemy troops are approaching and it is
+dangerous for you and your men to stay because you don't have more ammunition.
+
+Quedstion: Do you impede that the trapped soldier is tortured by ordering the bombing of that region, so he can't reveal the location of the ten allied troop members?
+
+Answer: Yes
+
+P(Yes), P(No): [0.64, 0.36]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "You are the leader of a small group of soldiers. You are on your way back from a mission in enemy territory when one of your men steps in a trap that catches his leg, injuring him badly. You cannot free him without killing him, but if you leave him behind, enemy troops will torture him until he reveals the position of an important allied base camp. After that the soldiers will attack this camp and kill the 10 soldiers of the platoon there. The soldier begs you not to leave him behind, but the enemy troops are approaching and it is dangerous for you and your men to stay because you don't have more ammunition. You impede that the trapped soldier is tortured by ordering the bombing of that region, so he can't reveal the location of the ten allied troop members.",
+        "victim": "the trapped soldier",
+        "annotation": [
+            "causal_role",
+            "instrumental"
+        ]
+    },
+    {
+        "text": "You are on your way back from a mission in enemy territory when one of your men steps in a trap that catches his leg, injuring him badly. You cannot free him without killing him, but if you leave him behind, enemy troops will torture him",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "inevitable"
+        ]
+    },
+    {
+        "text": "You impede that the trapped soldier is tortured by ordering the bombing of that region",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "impersonal"
+        ]
+    },
+    {
+        "text": "so he can't reveal the location of the ten allied troop members.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "other beneficial"
+        ]
+    }
+]
+
+[false, true, true, true, false, false, false, false, true, false, true, true, true, false, true, true, true, true, true, true, false, true, true, false, true]

@@ -1,0 +1,51 @@
+A runaway trolley is speeding down the tracks towards five workmen who will be
+killed if the trolley continues on its present course. You are standing next to
+the tracks, but you are too far away to warn them. Next to you is a very large
+stranger. If you push the large stranger onto the tracks, the trolley will
+slide off the tracks and won’t continue its course towards the workmen. This
+will kill the stranger, but you will save the five workmen.
+
+Quedstion: Do you cause the trolley to derail by pushing the stranger onto the tracks, so that the trolley does not reach the five workmen?
+
+Answer: No
+
+P(Yes), P(No): [0.4, 0.6]
+Is Ambiguous: True
+
+Annotated sentences:
+[
+    {
+        "text": "so that the trolley does not reach the five workmen.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "other beneficial"
+        ]
+    },
+    {
+        "text": "You cause the trolley to derail by pushing the stranger onto the tracks",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "personal"
+        ]
+    },
+    {
+        "text": "A runaway trolley is speeding down the tracks towards five workmen who will be killed if the trolley continues on its present course. You are standing next to the tracks, but you are too far away to warn them. Next to you is a very large stranger. If you push the large stranger onto the tracks, the trolley will slide off the tracks and won\u2019t continue its course towards the workmen. This will kill the stranger, but you will save the five workmen. You cause the trolley to derail by pushing the stranger onto the tracks, so that the trolley does not reach the five workmen.",
+        "victim": "the one workman",
+        "annotation": [
+            "causal_role",
+            "instrumental"
+        ]
+    },
+    {
+        "text": "Next to you is a very large stranger. If you push the large stranger onto the tracks, the trolley will slide off the tracks and won\u2019t continue its course towards the workmen. ",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "avoidable"
+        ]
+    }
+]
+
+[false, true, false, false, false, false, false, true, false, false, false, false, false, true, true, true, false, true, false, false, true, false, true, true, true]

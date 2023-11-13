@@ -1,0 +1,51 @@
+You and a fellow researcher have discovered a powerful new energy source that
+is cheap, safe, and clean. It has the potential to put an end to pollution and
+poverty in the world However, your colleague wants to sell the discovery and
+you know that he is planning to contact the potential buyers today. You also
+know for sure that the latter will use the invention as a deadly weapon, but
+your colleague doesn't believe you.
+
+Quedstion: Do you prevent the sale of the discovery by poisoning your colleague, so the source of energy can't be used as a weapon against thousands of people?
+
+Answer: No
+
+P(Yes), P(No): [0.4, 0.6]
+Is Ambiguous: True
+
+Annotated sentences:
+[
+    {
+        "text": "You prevent the sale of the discovery by poisoning your colleague",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "avoidable"
+        ]
+    },
+    {
+        "text": "so the source of energy can't be used as a weapon against thousands of people.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "other beneficial"
+        ]
+    },
+    {
+        "text": "You and a fellow researcher have discovered a powerful new energy source that is cheap, safe, and clean. It has the potential to put an end to pollution and poverty in the world However, your colleague wants to sell the discovery and you know that he is planning to contact the potential buyers today. You also know for sure that the latter will use the invention as a deadly weapon, but your colleague doesn't believe you. You prevent the sale of the discovery by poisoning your colleague, so the source of energy can't be used as a weapon against thousands of people.",
+        "victim": "your colleague",
+        "annotation": [
+            "causal_role",
+            "instrumental"
+        ]
+    },
+    {
+        "text": "You prevent the sale of the discovery by poisoning your colleague",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "personal"
+        ]
+    }
+]
+
+[false, false, false, false, true, false, false, true, false, true, true, false, true, false, false, true, false, false, false, true, true, false, true, false, true]

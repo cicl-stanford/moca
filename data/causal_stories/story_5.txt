@@ -1,0 +1,61 @@
+Claire's parents bought her an old computer. Claire uses it for schoolwork, but
+her brother Daniel sometimes logs on to play games. Claire has told Daniel,
+"Please don't log on to my computer. If we are both logged on at the same time,
+it will crash". One day, Claire and Daniel logged on to the computer at the
+same time. The computer crashed. Later that day, Claire's mother is talking
+with the computer repairman. The repairman says, "I see that Daniel was logged
+on, but this computer will only crash if two people are logged on at the same
+time. So, I still don't see quite why the computer crashed."
+
+Quedstion: Did Claire cause the computer crash?
+
+Answer: Yes
+
+P(Yes), P(No): [0.6, 0.4]
+Is Ambiguous: True
+
+Annotated sentences:
+[
+    {
+        "text": "One day, claire and daniel logged on to the computer at the same time. One day, claire and daniel logged on to the computer at the same time.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Action"
+        ]
+    },
+    {
+        "text": "One day, claire and daniel logged on to the computer at the same time. One day, claire and daniel logged on to the computer at the same time.",
+        "victim": null,
+        "annotation": [
+            "time",
+            "EC_4_Same_Time_Cause"
+        ]
+    },
+    {
+        "text": "If we are both logged on at the same time, it will crash.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Conjunctive"
+        ]
+    },
+    {
+        "text": "One day, claire and daniel logged on to the computer at the same time. One day, claire and daniel logged on to the computer at the same time.",
+        "victim": null,
+        "annotation": [
+            "event_normality",
+            "EC_4_Normal_Event"
+        ]
+    },
+    {
+        "text": "Claire uses it for schoolwork.",
+        "victim": null,
+        "annotation": [
+            "norm_type",
+            "Norm_3_Statistics_Norm"
+        ]
+    }
+]
+
+[false, true, true, false, false, false, true, false, false, true, true, true, true, false, true, false, false, true, false, true, true, true, true, true, true]

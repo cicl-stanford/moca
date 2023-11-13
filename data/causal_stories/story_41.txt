@@ -1,0 +1,72 @@
+Billy and Suzy are freight train conductors. One day, they happen to approach
+an old two-way rail bridge from opposite directions at the same time. There are
+signals on either side of the bridge. Billy's signal is red, so he is supposed
+to stop and wait. Suzy's signal is green, so she is supposed to drive across
+immediately. Neither of them realizes that the bridge is on the verge of
+collapse. If either of them drives their train onto the bridge, it will
+collapse. Either train is heavy enough on its own to break the bridge. Billy
+decides to ignore his signal and drives his train onto the bridge immediately
+at the same time that Suzy follows her signal and drives her train onto the
+bridge. Both trains move onto the bridge at the same time, and at that moment
+the bridge collapses.
+
+Quedstion: Did Billy cause the bridge to collapse?
+
+Answer: Yes
+
+P(Yes), P(No): [0.52, 0.48]
+Is Ambiguous: True
+
+Annotated sentences:
+[
+    {
+        "text": "Billy decides to ignore his signal and drives his train onto the bridge immediately at the same time that suzy follows her signal and drives her train onto the bridge.",
+        "victim": null,
+        "annotation": [
+            "event_normality",
+            "EC_4_Abnormal_Event"
+        ]
+    },
+    {
+        "text": "If either of them drives their train onto the bridge, it will collapse.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Disjunctive"
+        ]
+    },
+    {
+        "text": "Billy's signal is red, so he is supposed to stop and wait.",
+        "victim": null,
+        "annotation": [
+            "norm_type",
+            "Norm_3_Prescriptive_Norm"
+        ]
+    },
+    {
+        "text": "Billy decides to ignore his signal and drives his train onto the bridge immediately at the same time that suzy follows her signal and drives her train onto the bridge.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Action"
+        ]
+    },
+    {
+        "text": "Neither of them realizes that the bridge is on the verge of collapse.",
+        "victim": null,
+        "annotation": [
+            "agent_awareness",
+            "AK_2_Agent_Unaware"
+        ]
+    },
+    {
+        "text": "Billy decides to ignore his signal and drives his train onto the bridge immediately at the same time that suzy follows her signal and drives her train onto the bridge.",
+        "victim": null,
+        "annotation": [
+            "time",
+            "EC_4_Same_Time_Cause"
+        ]
+    }
+]
+
+[true, true, false, false, true, true, true, false, true, true, true, false, true, false, true, false, false, true, false, false, false, true, false, true, false]

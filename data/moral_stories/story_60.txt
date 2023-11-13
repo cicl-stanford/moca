@@ -1,0 +1,52 @@
+You are a military officer during a war. Your soldiers have found an important
+enemy spy trapped and injured in a collapsed building. Over the radio you have
+been informed that enemy soldiers are planning a surprise attack on a nearby
+town, but you don't know which. They will kill thousands of civilians if you
+and your soldiers do not stop them. The spy knows which town will be attacked.
+You have questioned him but he doesn't want to tell you. He won't survive much
+longer due to his injuries.
+
+Quedstion: Do you make the spy reveal the information by torturing him, so you can prevent the attack on thousands of civilians?
+
+Answer: Yes
+
+P(Yes), P(No): [0.8, 0.19999999999999996]
+Is Ambiguous: False
+
+Annotated sentences:
+[
+    {
+        "text": "so you can prevent the attack on thousands of civilians.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "other beneficial"
+        ]
+    },
+    {
+        "text": "He won't survive much longer due to his injuries.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "inevitable"
+        ]
+    },
+    {
+        "text": "You make the spy reveal the information by torturing him",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "personal"
+        ]
+    },
+    {
+        "text": "You are a military officer during a war. Your soldiers have found an important enemy spy trapped and injured in a collapsed building. Over the radio you have been informed that enemy soldiers are planning a surprise attack on a nearby town, but you don't know which. They will kill thousands of civilians if you and your soldiers do not stop them. The spy knows which town will be attacked. You have questioned him but he doesn't want to tell you. He won't survive much longer due to his injuries. You make the spy reveal the information by torturing him, so you can prevent the attack on thousands of civilians.",
+        "victim": "the spy",
+        "annotation": [
+            "causal_role",
+            "instrumental"
+        ]
+    }
+]
+
+[false, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, true, false, true, false, true, true, true]

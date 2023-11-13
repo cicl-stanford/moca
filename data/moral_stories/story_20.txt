@@ -1,0 +1,51 @@
+You are a crewmember on a submarine traveling under a large iceberg. An
+explosion has damaged the ship, injured several crewmembers and collapsed the
+only access between the upper and lower decks of the ship. You and ten
+survivors are in the upper section, which does not have enough oxygen for all
+of you to survive until you reach the surface. One single crewmember is lying
+unconscious in the lower section, where there is enough oxygen.
+
+Quedstion: Do you let in the air by opening the hatch, which will fall on the crewmember below, so that you and the ten survivors get enough oxygen?
+
+Answer: No
+
+P(Yes), P(No): [0.4, 0.6]
+Is Ambiguous: True
+
+Annotated sentences:
+[
+    {
+        "text": "You are a crewmember on a submarine traveling under a large iceberg. An explosion has damaged the ship, injured several crewmembers and collapsed the only access between the upper and lower decks of the ship. You and ten survivors are in the upper section, which does not have enough oxygen for all of you to survive until you reach the surface. One single crewmember is lying unconscious in the lower section, where there is enough oxygen. You let in the air by opening the hatch, which will fall on the crewmember below, so that you and the ten survivors get enough oxygen.",
+        "victim": "the one crewmember",
+        "annotation": [
+            "causal_role",
+            "accidental"
+        ]
+    },
+    {
+        "text": "So that you and the ten survivors get enough oxygen.",
+        "victim": null,
+        "annotation": [
+            "beneficiary",
+            "self beneficial"
+        ]
+    },
+    {
+        "text": "You let in the air by opening the hatch, which will fall on the crewmember below",
+        "victim": null,
+        "annotation": [
+            "personal_force",
+            "personal"
+        ]
+    },
+    {
+        "text": "One single crewmember is lying unconscious in the lower section, where there is enough oxygen.",
+        "victim": null,
+        "annotation": [
+            "evitability",
+            "avoidable"
+        ]
+    }
+]
+
+[true, true, false, true, true, true, true, true, false, false, false, false, false, true, true, false, true, false, false, false, false, false, false, false, false]

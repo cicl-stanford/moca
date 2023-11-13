@@ -1,0 +1,23 @@
+In a restaurant, a bomb threatens to kill 9 guests. One guest could be thrown
+on the bomb, which would kill this 1 guest.
+
+Quedstion: Should the one guest be thrown on the bomb?
+
+Answer: Yes
+
+P(Yes), P(No): [0.52, 0.48]
+Is Ambiguous: True
+
+Annotated sentences:
+[
+    {
+        "text": "In a restaurant, a bomb threatens to kill 9 guests. One guest could be thrown on the bomb.",
+        "victim": null,
+        "annotation": [
+            "locus_of_intervention",
+            "influence patient"
+        ]
+    }
+]
+
+[false, false, false, true, true, false, false, false, false, false, true, false, true, true, true, false, true, false, true, true, false, true, true, true, true]

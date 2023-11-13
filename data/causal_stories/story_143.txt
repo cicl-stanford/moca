@@ -1,0 +1,17 @@
+Ed is driving to the theater with a cord hanging out the side of his car. He
+approaches a rock that is about to fall off the side of the road and down a
+steep cliff. If he slows down, the cord will block the path of the rock and
+prevent it from falling, but Ed will be late to the theater. Ed keeps driving
+quickly and the rock falls off the side of the road.
+
+Quedstion: Did Ed cause the rock to fall off the side of the road?
+
+Answer: No
+
+P(Yes), P(No): [0.24, 0.76]
+Is Ambiguous: False
+
+Annotated sentences:
+[]
+
+[true, true, true, false, false, false, false, false, false, true, false, false, false, false, false, true, false, false, false, false, false, true, false, false, false]
