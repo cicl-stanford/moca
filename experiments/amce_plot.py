@@ -40,7 +40,7 @@ method_name_mapping = {
 
 
 def visualize_causal_acme(file_name='results/acme_causal_result.json', name_mapping=name_mapping,
-                          save_fig_name='acme_causal_fig.png'):
+                          save_fig_name='acme_causal_fig.png', plot_cs_with_normality=False):
     """
     This assumes a JSON file that has the following structure:
     {
@@ -73,8 +73,14 @@ def visualize_causal_acme(file_name='results/acme_causal_result.json', name_mapp
         for label, (mean, (upper, lower)) in result.items():
             if label == 'Conjunctive - Disjunctive':
                 continue
-            if label == 'Abnormal - Normal':
-                continue
+            if plot_cs_with_normality:
+                # plot the interaction between causal structure and event normality
+                if label == 'Normal - Abnormal':
+                    continue
+            else:
+                # plot normal / abnormal like the figure in the paper
+                if label == "Conj Abnormal - Conj Normal" or label == "Disj Abnormal - Disj Normal":
+                    continue
 
             if y == 0:
                 plt.plot((lower, mean, upper), (y + y_d, y + y_d, y + y_d), '-', c=geo_qualitative[str(color_idx)],

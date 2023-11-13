@@ -137,7 +137,23 @@ visualize_causal_acme('results/methods_acme_causal_result.json', name_mapping=me
                           save_fig_name="acme_causal_methods.png")
 ```
 
+**Note**: all plotting method has an optional argument `plot_cs_with_normality=False`. This argument is used to change
+the factor slightly -- instead of plotting `Normal` and `Abnormal`, flagging this to be True will introduce two
+new factors: `Conjunctive Normal`, `Conjunctive Abnormal` and `Disjunctive Normal`, `Disjunctive Abnormal`.
+
+This is used to study the effect of **Abnormal deflation** in stories with Disjunctive causal structure, and **Abnormal inflation** in stories with Conjunctive causal structure.
+
 ### Radar Plot
+
+<img height="500" width="500" src="https://github.com/cicl-stanford/moca/blob/main/experiments/acme_moral_radar_fig.png?raw=true"/>
+
+**Step 1**: See above. The same process is used to generate the result file: `results/acme_causal_result.json`.
+
+**Step 2**: use the following method:
+
+```python
+visualize_acme_radar('results/acme_moral_result.json', save_file_name='acme_moral_radar_fig.png')
+```
 
 ## LLM Credentials
 
@@ -163,5 +179,3 @@ which would be 100 runs of the entire dataset.
 ## Bugs
 
 Please report bugs as issues on GitHub.
-
-Contact: anie@stanford.edu
