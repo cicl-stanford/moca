@@ -1,0 +1,59 @@
+Lauren and Jane work for the same company. They each need to use a computer for
+work sometimes. Unfortunately, the computer isn't very powerful. If two people
+are logged on at the same time, it usually crashes. So the company decided to
+institute an official policy. It declared that Lauren would be the only one
+permitted to use the computer in the mornings and that Jane would be the only
+one permitted to use the computer in the afternoons. As expected, Lauren logged
+on the computer the next day at 9:00 am. But Jane decided to disobey the
+official policy. She also logged on at 9:00 am. The computer crashed
+immediately.
+
+Quedstion: Did Jane cause the computer to crash?
+
+Answer: Yes
+
+P(Yes), P(No): [0.92, 0.07999999999999996]
+
+Annotated sentences:
+[
+    {
+        "text": "Jane would be the only one permitted to use the computer in the afternoons.",
+        "victim": null,
+        "annotation": [
+            "norm_type",
+            "Norm_3_Prescriptive_Norm"
+        ]
+    },
+    {
+        "text": "If two people are logged on at the same time, it usually crashes.",
+        "victim": null,
+        "annotation": [
+            "causal_structure",
+            "CS_1_Conjunctive"
+        ]
+    },
+    {
+        "text": "Jane decided to disobey the official policy. she also logged on at 9:00 am.",
+        "victim": null,
+        "annotation": [
+            "action_omission",
+            "EC_4_Action"
+        ]
+    },
+    {
+        "text": "Jane decided to disobey the official policy. she also logged on at 9:00 am.",
+        "victim": null,
+        "annotation": [
+            "event_normality",
+            "EC_4_Abnormal_Event"
+        ]
+    },
+    {
+        "text": "Jane decided to disobey the official policy. she also logged on at 9:00 am.",
+        "victim": null,
+        "annotation": [
+            "time",
+            "EC_4_Same_Time_Cause"
+        ]
+    }
+]
