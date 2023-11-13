@@ -29,6 +29,14 @@ Answer: Yes
 P(Yes), P(No): [0.76, 0.24]
 Is Ambiguous: False
 
+Factors: (factor: attribute) 
+
+Agent Awareness: Aware
+Action Omission: Omission
+Causal Structure: Conjunctive
+Event Normality: Abnormal
+Norm Type: Prescriptive Norm
+
 Annotated sentences:
 [
     {
@@ -73,4 +81,5 @@ Annotated sentences:
     }
 ]
 
+Individual votes:
 [true, true, false, false, false, true, false, true, false, true, true, false, true, true, true, true, true, true, true, true, true, true, true, true, true]

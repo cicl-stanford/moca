@@ -14,6 +14,14 @@ Answer: Yes
 P(Yes), P(No): [0.52, 0.48]
 Is Ambiguous: True
 
+Factors: (factor: attribute) 
+
+Action Omission: Action
+Time: Same Time Cause
+Norm Type: Statistical Norm
+Causal Structure: Conjunctive
+Event Normality: Normal
+
 Annotated sentences:
 [
     {
@@ -58,4 +66,5 @@ Annotated sentences:
     }
 ]
 
+Individual votes:
 [false, true, false, true, true, false, false, true, true, true, false, true, false, false, true, true, true, false, false, false, true, false, true, false, true]

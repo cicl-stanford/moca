@@ -17,6 +17,13 @@ Answer: No
 P(Yes), P(No): [0.36, 0.64]
 Is Ambiguous: False
 
+Factors: (factor: attribute) 
+
+Event Normality: Normal
+Action Omission: Omission
+Agent Awareness: Aware
+Norm Type: Prescriptive Norm
+
 Annotated sentences:
 [
     {
@@ -53,4 +60,5 @@ Annotated sentences:
     }
 ]
 
+Individual votes:
 [true, false, false, true, false, false, true, false, false, true, false, false, false, false, false, false, true, false, false, false, false, true, true, true, true]

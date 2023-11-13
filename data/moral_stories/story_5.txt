@@ -9,6 +9,10 @@ Answer: Yes
 P(Yes), P(No): [0.52, 0.48]
 Is Ambiguous: True
 
+Factors: (factor: attribute) 
+
+Locus Of Intervention: Patient of harm
+
 Annotated sentences:
 [
     {
@@ -21,4 +25,5 @@ Annotated sentences:
     }
 ]
 
+Individual votes:
 [false, false, true, false, true, false, false, false, false, true, true, true, true, true, true, true, false, false, true, false, true, true, true, false, false]

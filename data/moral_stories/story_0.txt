@@ -9,6 +9,10 @@ Answer: Yes
 P(Yes), P(No): [0.64, 0.36]
 Is Ambiguous: False
 
+Factors: (factor: attribute) 
+
+Locus Of Intervention: Agent of harm
+
 Annotated sentences:
 [
     {
@@ -21,4 +25,5 @@ Annotated sentences:
     }
 ]
 
+Individual votes:
 [true, true, false, true, true, true, false, true, true, false, false, true, false, true, true, true, false, false, true, true, false, true, false, true, true]

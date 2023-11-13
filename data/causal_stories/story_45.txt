@@ -20,6 +20,12 @@ Answer: No
 P(Yes), P(No): [0.32, 0.6799999999999999]
 Is Ambiguous: False
 
+Factors: (factor: attribute) 
+
+Causal Structure: Disjunctive
+Time: Same Time Cause
+Action Omission: Action
+
 Annotated sentences:
 [
     {
@@ -48,4 +54,5 @@ Annotated sentences:
     }
 ]
 
+Individual votes:
 [false, true, true, true, true, true, false, true, false, false, false, false, true, false, false, false, false, false, false, false, false, false, true, false, false]

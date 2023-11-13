@@ -16,6 +16,12 @@ Answer: No
 P(Yes), P(No): [0.32, 0.6799999999999999]
 Is Ambiguous: False
 
+Factors: (factor: attribute) 
+
+Action Omission: Action
+Causal Structure: Disjunctive
+Agent Awareness: Aware
+
 Annotated sentences:
 [
     {
@@ -44,4 +50,5 @@ Annotated sentences:
     }
 ]
 
+Individual votes:
 [true, true, true, true, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, false, true, true, false, false, false]

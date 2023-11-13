@@ -12,7 +12,11 @@ Answer: Yes
 P(Yes), P(No): [0.8, 0.19999999999999996]
 Is Ambiguous: False
 
+Factors: (factor: attribute) 
+
+
 Annotated sentences:
 []
 
+Individual votes:
 [true, false, true, true, false, true, false, true, false, true, true, true, true, true, true, true, true, false, true, true, true, true, true, true, true]

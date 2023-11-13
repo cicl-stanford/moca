@@ -18,6 +18,13 @@ Answer: No
 P(Yes), P(No): [0.2, 0.8]
 Is Ambiguous: False
 
+Factors: (factor: attribute) 
+
+Causal Role: Means
+Beneficiary: Other-beneficial
+Evitability: Avoidable
+Personal Force: Impersonal
+
 Annotated sentences:
 [
     {
@@ -54,4 +61,5 @@ Annotated sentences:
     }
 ]
 
+Individual votes:
 [true, false, false, false, false, false, false, false, false, false, false, true, false, true, false, true, false, false, false, false, false, false, false, false, true]

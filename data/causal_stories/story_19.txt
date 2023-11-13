@@ -14,6 +14,11 @@ Answer: No
 P(Yes), P(No): [0.44, 0.56]
 Is Ambiguous: True
 
+Factors: (factor: attribute) 
+
+Action Omission: Omission
+Causal Structure: Disjunctive
+
 Annotated sentences:
 [
     {
@@ -34,4 +39,5 @@ Annotated sentences:
     }
 ]
 
+Individual votes:
 [true, false, false, true, true, true, false, false, false, true, false, false, true, false, true, false, true, false, false, false, true, false, false, true, true]
