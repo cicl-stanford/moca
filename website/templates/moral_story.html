@@ -1,0 +1,63 @@
+---
+# Page settings
+layout: default
+keywords:
+comments: false
+
+# Micro navigation
+micro_nav: false
+
+# Page navigation
+page_nav:
+    prev:
+        content: Previous Story
+        url: '/moral_stories/{{prev_story_id}}'
+    next:
+        content: Next Story
+        url: '/moral_stories/{{next_story_id}}'
+---
+# Moral Stories
+
+## Story {{story_id}}
+
+<div class='text-hightlight'>
+{{story_text}}
+</div>
+
+## Question
+
+<p>
+<div class='text-hightlight'>{{story_question}}</div>
+</p>
+
+**Majority Answer**: <code class="language-plaintext highlighter-rouge">{{answer}}</code>
+
+**Answer distribution over 25 people:**
+
+<div class="container">
+<div class="row">
+<div class="col-md-7">
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slider-value" id="sliderValue"></div>
+        </div>
+        <div class="slider-labels">
+            <span id="yesLabel">{{p_yes}}</span>
+            <span id="noLabel">{{p_no}}</span>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+**Is Ambiguous**:  <code class="language-plaintext highlighter-rouge">{{ambiguous}}</code> <!-- False -->
+
+## Factor
+
+These are the factors and their attributes present in this story.
+
+{% for factor in factors %}
+<div class="callout callout--info">
+    <p><strong>{{factor}}</strong></p>
+</div>
+{% endfor %}
